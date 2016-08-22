@@ -145,6 +145,10 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>PW_USE_GPS</key>
+	<false/>
+	<key>Pushwoosh_LOG_LEVEL</key>
+	<string>WARNING</string>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
@@ -245,9 +249,5 @@
 			</dict>
 		</dict>
 	</array>
-	<key>PW_USE_GPS</key>
-	<false/>
-	<key>Pushwoosh_LOG_LEVEL</key>
-	<string>WARNING</string>
 </dict>
 </plist>
