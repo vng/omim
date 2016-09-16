@@ -210,8 +210,10 @@ public final class TrackRecorder
     });
   }
 
+  //@SuppressLint("SdCardPath")
   static void log(String message)
   {
+    /*
     if (sEnableLogging == null)
       sEnableLogging = ("debug".equals(BuildConfig.BUILD_TYPE) || "beta".equals(BuildConfig.BUILD_TYPE));
 
@@ -230,6 +232,8 @@ public final class TrackRecorder
 
     if (sLogger != null)
       sLogger.d(message);
+    }
+    */
   }
 
   private static native void nativeSetEnabled(boolean enable);
