@@ -53,7 +53,6 @@
   tableView.rowHeight = UITableViewAutomaticDimension;
   [tableView registerWithCellClass:[MWMSearchSuggestionCell class]];
   [tableView registerWithCellClass:[MWMSearchCommonCell class]];
-  [tableView registerWithCellClass:[MWMAdBanner class]];
 }
 
 - (void)reloadData { [self.tableView reloadData]; }
@@ -101,11 +100,6 @@
   case MWMSearchItemTypeMopub:
   case MWMSearchItemTypeFacebook:
   {
-    auto cell = static_cast<MWMAdBanner *>(
-        [tableView dequeueReusableCellWithCellClass:[MWMAdBanner class] indexPath:indexPath]);
-    auto ad = [MWMSearch adWithContainerIndex:containerIndex];
-    [cell configWithAd:ad containerType:MWMAdBannerContainerTypeSearch];
-    return cell;
   }
   case MWMSearchItemTypeSuggestion:
   {

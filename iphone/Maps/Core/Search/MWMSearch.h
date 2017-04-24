@@ -1,4 +1,3 @@
-#import "MWMBanner.h"
 #import "MWMSearchFilterViewController.h"
 #import "MWMSearchItemType.h"
 #import "MWMSearchObserver.h"
@@ -24,7 +23,6 @@ class Result;
 + (NSUInteger)containerIndexWithRow:(NSUInteger)row;
 + (search::Result const &)resultWithContainerIndex:(NSUInteger)index;
 + (BOOL)isLocalAdsWithContainerIndex:(NSUInteger)index;
-+ (id<MWMBanner>)adWithContainerIndex:(NSUInteger)index;
 
 + (void)update;
 + (void)clear;

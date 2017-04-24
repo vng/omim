@@ -1,5 +1,4 @@
 #import "MWMPlacePageData.h"
-#import "MWMBannerHelpers.h"
 #import "MWMNetworkPolicy.h"
 #import "MWMUGCReviewVM.h"
 #import "SwiftBridge.h"
@@ -27,7 +26,6 @@ using namespace place_page;
 @interface MWMPlacePageData ()
 
 @property(copy, nonatomic) NSString * cachedMinPrice;
-@property(nonatomic) id<MWMBanner> nativeAd;
 @property(copy, nonatomic) NSArray<MWMGalleryItemModel *> * photos;
 @property(copy, nonatomic) NSArray<MWMViatorItemModel *> * viatorItems;
 @property(nonatomic) NSNumberFormatter * currencyFormatter;
@@ -133,26 +131,6 @@ using namespace place_page;
   
   NSAssert(!m_previewRows.empty(), @"Preview row's can't be empty!");
   m_previewRows.push_back(PreviewRows::Space);
-
-  if (network_policy::CanUseNetwork() && ![MWMSettings adForbidden] && m_info.HasBanner() &&
-      ![self isViator] && ![self isCian])
-  {
-    __weak auto wSelf = self;
-    [[MWMBannersCache cache]
-        getWithCoreBanners:banner_helpers::MatchPriorityBanners(m_info.GetBanners())
-                 cacheOnly:NO
-                   loadNew:YES
-                completion:^(id<MWMBanner> ad, BOOL isAsync) {
-                  __strong auto self = wSelf;
-                  if (!self)
-                    return;
-
-                  self.nativeAd = ad;
-                  self->m_previewRows.push_back(PreviewRows::Banner);
-                  if (isAsync)
-                    self.bannerIsReadyCallback();
-                }];
-  }
 }
 
 - (void)fillMetaInfoSection
@@ -493,11 +471,6 @@ using namespace place_page;
 
 - (void)dealloc
 {
-// TODO: Submit ugc.
-//  [self.reviewViewModel submit];
-  auto nativeAd = self.nativeAd;
-  if (nativeAd)
-    [[MWMBannersCache cache] bannerIsOutOfScreenWithCoreBanner:nativeAd];
 }
 
 #pragma mark - Getters

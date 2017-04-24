@@ -1,5 +1,5 @@
 #import "MWMMapDownloaderViewController.h"
-#import "MWMMapDownloaderExtendedDataSourceWithAds.h"
+#import "MWMMapDownloaderExtendedDataSource.h"
 #import "MWMMapDownloaderSearchDataSource.h"
 #import "SwiftBridge.h"
 
@@ -193,7 +193,7 @@ using namespace storage;
 - (void)setParentCountryId:(NSString *)parentId mode:(MWMMapDownloaderMode)mode
 {
   self.defaultDataSource =
-      [[MWMMapDownloaderExtendedDataSourceWithAds alloc] initForRootCountryId:parentId
+      [[MWMMapDownloaderExtendedDataSource alloc] initForRootCountryId:parentId
                                                                      delegate:self
                                                                          mode:mode];
 }

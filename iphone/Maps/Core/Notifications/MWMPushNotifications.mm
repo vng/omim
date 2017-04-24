@@ -1,9 +1,4 @@
 #import "MWMPushNotifications.h"
-#import <Crashlytics/Crashlytics.h>
-#import <Pushwoosh/PushNotificationManager.h>
-#import <UserNotifications/UserNotifications.h>
-#import "MWMCommon.h"
-#import "Statistics.h"
 
 #import "3party/Alohalytics/src/alohalytics_objc.h"
 
@@ -22,41 +17,22 @@ NSString * const kPushDeviceTokenLogEvent = @"iOSPushDeviceToken";
 
 + (void)setup:(NSDictionary *)launchOptions
 {
-  PushNotificationManager * pushManager = [PushNotificationManager pushManager];
-
-  if (!isIOSVersionLessThan(10))
-    [UNUserNotificationCenter currentNotificationCenter].delegate = pushManager.notificationCenterDelegate;
-
-  [pushManager handlePushReceived:launchOptions];
-
-  // make sure we count app open in Pushwoosh stats
-  [pushManager sendAppOpen];
-
-  // register for push notifications!
-  [pushManager registerForPushNotifications];
 }
 
 + (void)application:(UIApplication *)application
     didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
-  PushNotificationManager * pushManager = [PushNotificationManager pushManager];
-  [pushManager handlePushRegistration:deviceToken];
-  [Alohalytics logEvent:kPushDeviceTokenLogEvent withValue:pushManager.getHWID];
 }
 
 + (void)application:(UIApplication *)application
     didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
 {
-  [[PushNotificationManager pushManager] handlePushRegistrationFailure:error];
 }
 
 + (void)application:(UIApplication *)application
     didReceiveRemoteNotification:(NSDictionary *)userInfo
           fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
-  [Statistics logEvent:kStatEventName(kStatApplication, kStatPushReceived) withParameters:userInfo];
-  if (![self handleURLPush:userInfo])
-    [[PushNotificationManager pushManager] handlePushReceived:userInfo];
   completionHandler(UIBackgroundFetchResultNoData);
 }
 
@@ -76,5 +52,4 @@ NSString * const kPushDeviceTokenLogEvent = @"iOSPushDeviceToken";
   return YES;
 }
 
-+ (NSString *)pushToken { return [[PushNotificationManager pushManager] getPushToken]; }
 @end

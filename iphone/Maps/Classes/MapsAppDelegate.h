@@ -1,5 +1,4 @@
 #import "DownloadIndicatorProtocol.h"
-#import "MWMMyTarget.h"
 #import "MWMNavigationController.h"
 
 @class MapViewController;
@@ -17,8 +16,6 @@
 
 @property(nonatomic, readonly) MapViewController * mapViewController;
 @property(nonatomic, readonly) BOOL isDrapeEngineCreated;
-
-@property(nonatomic) MWMMyTarget * myTarget;
 
 + (MapsAppDelegate *)theApp;
 

@@ -122,10 +122,10 @@
 
 namespace
 {
-array<Class, 8> const kPreviewCells = {{[_MWMPPPTitle class], [_MWMPPPExternalTitle class],
+array<Class, 7> const kPreviewCells = {{[_MWMPPPTitle class], [_MWMPPPExternalTitle class],
                                         [_MWMPPPSubtitle class], [_MWMPPPSchedule class],
                                         [_MWMPPPBooking class], [_MWMPPPAddress class],
-                                        [_MWMPPPSpace class], [MWMAdBanner class]}};
+                                        [_MWMPPPSpace class]}};
 }  // namespace
 
 @interface MWMPPPreviewLayoutHelper ()
@@ -147,7 +147,6 @@ array<Class, 8> const kPreviewCells = {{[_MWMPPPTitle class], [_MWMPPPExternalTi
 @property(nonatomic) BOOL lastCellIsBanner;
 @property(nonatomic) NSUInteger distanceRow;
 
-@property(weak, nonatomic) MWMAdBanner * cachedBannerCell;
 @property(weak, nonatomic) _MWMPPPSubtitle * cachedSubtitle;
 
 @end
@@ -254,11 +253,6 @@ array<Class, 8> const kPreviewCells = {{[_MWMPPPTitle class], [_MWMPPPExternalTi
     break;
   case PreviewRows::Space:
     return c;
-  case PreviewRows::Banner:
-    auto bannerCell = static_cast<MWMAdBanner *>(c);
-    [bannerCell configWithAd:data.nativeAd containerType:MWMAdBannerContainerTypePlacePage];
-    self.cachedBannerCell = bannerCell;
-    return bannerCell;
   }
 
   auto baseCell = static_cast<_MWMPPPCellBase *>(c);
@@ -333,7 +327,7 @@ array<Class, 8> const kPreviewCells = {{[_MWMPPPTitle class], [_MWMPPPExternalTi
     return;
   auto const & previewRows = data.previewRows;
   auto const size = previewRows.size();
-  self.lastCellIsBanner = previewRows.back() == place_page::PreviewRows::Banner;
+  self.lastCellIsBanner = previewRows.back() == place_page::PreviewRows::Space;
   self.lastCellIndexPath =
       [NSIndexPath indexPathForRow:size - 1
                          inSection:static_cast<NSUInteger>(place_page::Sections::Preview)];
@@ -350,9 +344,7 @@ array<Class, 8> const kPreviewCells = {{[_MWMPPPTitle class], [_MWMPPPExternalTi
     return height;
 
   auto constexpr gapBannerHeight = 4.0;
-  CGFloat const excessHeight = self.cachedBannerCell.state == MWMAdBannerStateDetailed
-                                   ? [MWMAdBanner detailedBannerExcessHeight]
-                                   : 0;
+  CGFloat const excessHeight = 0;
 
   return height + gapBannerHeight - excessHeight;
 }
@@ -370,7 +362,6 @@ array<Class, 8> const kPreviewCells = {{[_MWMPPPTitle class], [_MWMPPPExternalTi
           @(data.latLon.lon));
 
   [self.tableView update:^{
-    self.cachedBannerCell.state = isOpen ? MWMAdBannerStateDetailed : MWMAdBannerStateCompact;
   }];
 }
 

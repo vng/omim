@@ -3,22 +3,16 @@
 //
 
 #import <FBAudienceNetwork/FBAudienceNetwork.h>
-#import <MyTargetSDK/MyTargetSDK.h>
-#import <MyTrackerSDK/MRMyTracker.h>
 #import <UIKit/UIKit.h>
 
 #import "3party/Alohalytics/src/alohalytics_objc.h"
-#import "MPNativeAd+MWM.h"
-#import "MPNativeAd.h"
 #import "MWMTypes.h"
-#import "MoPub-Bridging-Header.h"
 #import "UIKitCategories.h"
 
 #import "private.h"
 
 #import "AppInfo.h"
 #import "MWMAvailableAreaAffectDirection.h"
-#import "MWMBanner.h"
 #import "MWMBottomMenuViewController.h"
 #import "MWMCollectionViewController.h"
 #import "MWMConsts.h"

@@ -588,7 +588,6 @@ map<MetainfoRows, Class> const kMetaInfoCells = {
 
   checkCell(self.cianCell, ^{
     self.cianCell = nil;
-    [MRMyTracker trackEventWithName:@"Placepage_SponsoredGallery_shown_Cian.Ru"];
     [Statistics logEvent:kStatPlacepageSponsoredShow withParameters:@{kStatProvider : kStatCian}];
   });
 }

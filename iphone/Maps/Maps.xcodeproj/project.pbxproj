@@ -48,15 +48,6 @@
 		340474FC1E08199D00C92850 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474E01E08199D00C92850 /* FBSDKShareKit.framework */; };
 		340474FD1E08199D00C92850 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474E01E08199D00C92850 /* FBSDKShareKit.framework */; };
 		340474FE1E08199D00C92850 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474E01E08199D00C92850 /* FBSDKShareKit.framework */; };
-		340474FF1E08199D00C92850 /* libFlurry_7.8.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474E41E08199D00C92850 /* libFlurry_7.8.2.a */; };
-		340475001E08199D00C92850 /* libFlurry_7.8.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474E41E08199D00C92850 /* libFlurry_7.8.2.a */; };
-		340475011E08199D00C92850 /* libFlurry_7.8.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474E41E08199D00C92850 /* libFlurry_7.8.2.a */; };
-		340475081E08199E00C92850 /* MWMMyTarget.mm in Sources */ = {isa = PBXBuildFile; fileRef = 340474EB1E08199D00C92850 /* MWMMyTarget.mm */; };
-		340475091E08199E00C92850 /* MWMMyTarget.mm in Sources */ = {isa = PBXBuildFile; fileRef = 340474EB1E08199D00C92850 /* MWMMyTarget.mm */; };
-		3404750A1E08199E00C92850 /* MWMMyTarget.mm in Sources */ = {isa = PBXBuildFile; fileRef = 340474EB1E08199D00C92850 /* MWMMyTarget.mm */; };
-		3404750E1E08199E00C92850 /* MyTrackerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474EE1E08199D00C92850 /* MyTrackerSDK.framework */; };
-		3404750F1E08199E00C92850 /* MyTrackerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474EE1E08199D00C92850 /* MyTrackerSDK.framework */; };
-		340475101E08199E00C92850 /* MyTrackerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474EE1E08199D00C92850 /* MyTrackerSDK.framework */; };
 		340475491E081A4600C92850 /* AppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 340475161E081A4600C92850 /* AppInfo.mm */; };
 		3404754A1E081A4600C92850 /* AppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 340475161E081A4600C92850 /* AppInfo.mm */; };
 		3404754B1E081A4600C92850 /* AppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 340475161E081A4600C92850 /* AppInfo.mm */; };
@@ -179,8 +170,6 @@
 		341B10761E55B15B00071C74 /* MWMMobileInternetAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349A13811DEC138C00C7DB60 /* MWMMobileInternetAlert.xib */; };
 		341C2A571B72092A00AD41A1 /* 02_droidsans-fallback.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DF04B231B71010E00DACAF1 /* 02_droidsans-fallback.ttf */; };
 		341C2A5B1B720B8A00AD41A1 /* MWMAPIBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341C2A5A1B720B8A00AD41A1 /* MWMAPIBarView.xib */; };
-		341CF15E1E9E2AA9009AC928 /* libMopub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F4075D1E9E1D7A00E57AC0 /* libMopub.a */; };
-		341CF15F1E9E2ADC009AC928 /* libMopub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F4075D1E9E1D7A00E57AC0 /* libMopub.a */; };
 		341F09841C20138100F18AC5 /* libpugixml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 341F09831C20138100F18AC5 /* libpugixml.a */; };
 		34201E091DC0DC7300D24118 /* libpartners_api.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDB4BC31DAB98F000F4D021 /* libpartners_api.a */; };
 		34201E0C1DC0E33100D24118 /* libtracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34201E0B1DC0E33100D24118 /* libtracking.a */; };
@@ -401,12 +390,6 @@
 		3486B51D1E27AD590069C126 /* MWMFrameworkHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3486B51C1E27AD590069C126 /* MWMFrameworkHelper.mm */; };
 		3486B51E1E27AD590069C126 /* MWMFrameworkHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3486B51C1E27AD590069C126 /* MWMFrameworkHelper.mm */; };
 		3486B51F1E27AD590069C126 /* MWMFrameworkHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3486B51C1E27AD590069C126 /* MWMFrameworkHelper.mm */; };
-		3488B0121E9D0AEC0068AFD8 /* AdBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488B0101E9D0AEC0068AFD8 /* AdBanner.swift */; };
-		3488B0131E9D0AEC0068AFD8 /* AdBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488B0101E9D0AEC0068AFD8 /* AdBanner.swift */; };
-		3488B0141E9D0AEC0068AFD8 /* AdBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488B0101E9D0AEC0068AFD8 /* AdBanner.swift */; };
-		3488B0151E9D0AEC0068AFD8 /* AdBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3488B0111E9D0AEC0068AFD8 /* AdBanner.xib */; };
-		3488B0161E9D0AEC0068AFD8 /* AdBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3488B0111E9D0AEC0068AFD8 /* AdBanner.xib */; };
-		3488B0171E9D0AEC0068AFD8 /* AdBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3488B0111E9D0AEC0068AFD8 /* AdBanner.xib */; };
 		3488B0191E9D0B230068AFD8 /* UIColor+Modifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488B0181E9D0B230068AFD8 /* UIColor+Modifications.swift */; };
 		3488B01A1E9D0B230068AFD8 /* UIColor+Modifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488B0181E9D0B230068AFD8 /* UIColor+Modifications.swift */; };
 		3488B01B1E9D0B230068AFD8 /* UIColor+Modifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488B0181E9D0B230068AFD8 /* UIColor+Modifications.swift */; };
@@ -428,9 +411,6 @@
 		3490D2E11CE9DD2500D0B838 /* MWMSideButtonsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3490D2DC1CE9DD2500D0B838 /* MWMSideButtonsView.mm */; };
 		3490D2E21CE9DD2500D0B838 /* MWMSideButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3490D2DD1CE9DD2500D0B838 /* MWMSideButtonsView.xib */; };
 		3490D2E31CE9DD2500D0B838 /* MWMSideButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3490D2DD1CE9DD2500D0B838 /* MWMSideButtonsView.xib */; };
-		34926BE61EA4C2A700DCF14C /* SearchBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34926BE51EA4C2A700DCF14C /* SearchBanners.swift */; };
-		34926BE71EA4C2A700DCF14C /* SearchBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34926BE51EA4C2A700DCF14C /* SearchBanners.swift */; };
-		34926BE81EA4C2A700DCF14C /* SearchBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34926BE51EA4C2A700DCF14C /* SearchBanners.swift */; };
 		34943BB61E26222300B14F84 /* WelcomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34943BB51E26222300B14F84 /* WelcomeProtocol.swift */; };
 		34943BB71E26222300B14F84 /* WelcomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34943BB51E26222300B14F84 /* WelcomeProtocol.swift */; };
 		34943BB81E26222300B14F84 /* WelcomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34943BB51E26222300B14F84 /* WelcomeProtocol.swift */; };
@@ -634,9 +614,6 @@
 		34D8087F1E79361B002F0584 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D8087C1E79360D002F0584 /* AlamofireImage.framework */; };
 		34D808801E79361E002F0584 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D8087A1E793606002F0584 /* Alamofire.framework */; };
 		34D808811E79361E002F0584 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D8087A1E793606002F0584 /* Alamofire.framework */; };
-		34D808861E793F91002F0584 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D808851E793F91002F0584 /* Pushwoosh.framework */; };
-		34D808871E793FA3002F0584 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D808851E793F91002F0584 /* Pushwoosh.framework */; };
-		34D808881E793FA4002F0584 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D808851E793F91002F0584 /* Pushwoosh.framework */; };
 		34E7760F1F14B165003040B3 /* VisibleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E7760E1F14B165003040B3 /* VisibleArea.swift */; };
 		34E776101F14B165003040B3 /* VisibleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E7760E1F14B165003040B3 /* VisibleArea.swift */; };
 		34E776111F14B165003040B3 /* VisibleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E7760E1F14B165003040B3 /* VisibleArea.swift */; };
@@ -668,31 +645,6 @@
 		34EE25AA1EFA726400F870AB /* ViatorItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EE25A81EFA726400F870AB /* ViatorItemModel.swift */; };
 		34EE25AB1EFA726400F870AB /* ViatorItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EE25A81EFA726400F870AB /* ViatorItemModel.swift */; };
 		34EF94291C05A6F30050B714 /* MWMSegue.mm in Sources */ = {isa = PBXBuildFile; fileRef = F607C18D1C047FDC00B53A87 /* MWMSegue.mm */; };
-		34F4072B1E9E1AFF00E57AC0 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071D1E9E1AFF00E57AC0 /* Banner.swift */; };
-		34F4072C1E9E1AFF00E57AC0 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071D1E9E1AFF00E57AC0 /* Banner.swift */; };
-		34F4072D1E9E1AFF00E57AC0 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071D1E9E1AFF00E57AC0 /* Banner.swift */; };
-		34F4072E1E9E1AFF00E57AC0 /* BannersCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071E1E9E1AFF00E57AC0 /* BannersCache.swift */; };
-		34F4072F1E9E1AFF00E57AC0 /* BannersCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071E1E9E1AFF00E57AC0 /* BannersCache.swift */; };
-		34F407301E9E1AFF00E57AC0 /* BannersCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071E1E9E1AFF00E57AC0 /* BannersCache.swift */; };
-		34F407311E9E1AFF00E57AC0 /* BannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071F1E9E1AFF00E57AC0 /* BannerType.swift */; };
-		34F407321E9E1AFF00E57AC0 /* BannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071F1E9E1AFF00E57AC0 /* BannerType.swift */; };
-		34F407331E9E1AFF00E57AC0 /* BannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071F1E9E1AFF00E57AC0 /* BannerType.swift */; };
-		34F407341E9E1AFF00E57AC0 /* CoreBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407201E9E1AFF00E57AC0 /* CoreBanner.swift */; };
-		34F407351E9E1AFF00E57AC0 /* CoreBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407201E9E1AFF00E57AC0 /* CoreBanner.swift */; };
-		34F407361E9E1AFF00E57AC0 /* CoreBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407201E9E1AFF00E57AC0 /* CoreBanner.swift */; };
-		34F407371E9E1AFF00E57AC0 /* FacebookBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407221E9E1AFF00E57AC0 /* FacebookBanner.swift */; };
-		34F407381E9E1AFF00E57AC0 /* FacebookBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407221E9E1AFF00E57AC0 /* FacebookBanner.swift */; };
-		34F407391E9E1AFF00E57AC0 /* FacebookBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407221E9E1AFF00E57AC0 /* FacebookBanner.swift */; };
-		34F4073A1E9E1AFF00E57AC0 /* MopubBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407241E9E1AFF00E57AC0 /* MopubBanner.swift */; };
-		34F4073B1E9E1AFF00E57AC0 /* MopubBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407241E9E1AFF00E57AC0 /* MopubBanner.swift */; };
-		34F4073C1E9E1AFF00E57AC0 /* MopubBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407241E9E1AFF00E57AC0 /* MopubBanner.swift */; };
-		34F4073D1E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34F407261E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm */; };
-		34F4073E1E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34F407261E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm */; };
-		34F4073F1E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34F407261E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm */; };
-		34F407401E9E1AFF00E57AC0 /* RBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4072A1E9E1AFF00E57AC0 /* RBBanner.swift */; };
-		34F407411E9E1AFF00E57AC0 /* RBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4072A1E9E1AFF00E57AC0 /* RBBanner.swift */; };
-		34F407421E9E1AFF00E57AC0 /* RBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4072A1E9E1AFF00E57AC0 /* RBBanner.swift */; };
-		34F409891E9E1DD200E57AC0 /* libMopub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F4075D1E9E1D7A00E57AC0 /* libMopub.a */; };
 		34F4098B1E9E221700E57AC0 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F4098A1E9E221700E57AC0 /* FBAudienceNetwork.framework */; };
 		34F4098C1E9E221700E57AC0 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F4098A1E9E221700E57AC0 /* FBAudienceNetwork.framework */; };
 		34F4098D1E9E221700E57AC0 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F4098A1E9E221700E57AC0 /* FBAudienceNetwork.framework */; };
@@ -1015,6 +967,9 @@
 		978D4A31199A11E600D72CA7 /* faq.html in Resources */ = {isa = PBXBuildFile; fileRef = 978D4A30199A11E600D72CA7 /* faq.html */; };
 		97A5967F19B9CD47007A963F /* copyright.html in Resources */ = {isa = PBXBuildFile; fileRef = 97A5967E19B9CD47007A963F /* copyright.html */; };
 		A367C93B1B17334800E2B6E7 /* resources-default in Resources */ = {isa = PBXBuildFile; fileRef = A367C93A1B17334800E2B6E7 /* resources-default */; };
+		AC79F11F1E534D0B00B7D954 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC79F11E1E534D0B00B7D954 /* AVFoundation.framework */; };
+		AC79F1211E534D4000B7D954 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC79F1201E534D4000B7D954 /* CoreTelephony.framework */; };
+		AC79F1251E534E1700B7D954 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC79F1241E534E1700B7D954 /* AudioToolbox.framework */; };
 		BB7626B51E8559980031D71C /* icudt57l.dat in Resources */ = {isa = PBXBuildFile; fileRef = BB7626B41E8559980031D71C /* icudt57l.dat */; };
 		BB7626B61E85599C0031D71C /* icudt57l.dat in Resources */ = {isa = PBXBuildFile; fileRef = BB7626B41E8559980031D71C /* icudt57l.dat */; };
 		BB7626B71E85599C0031D71C /* icudt57l.dat in Resources */ = {isa = PBXBuildFile; fileRef = BB7626B41E8559980031D71C /* icudt57l.dat */; };
@@ -1149,9 +1104,6 @@
 		F682249E1E5B105900BC1C18 /* PPHotelDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F682249D1E5B105900BC1C18 /* PPHotelDescriptionCell.xib */; };
 		F682249F1E5B105900BC1C18 /* PPHotelDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F682249D1E5B105900BC1C18 /* PPHotelDescriptionCell.xib */; };
 		F68224A01E5B105900BC1C18 /* PPHotelDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F682249D1E5B105900BC1C18 /* PPHotelDescriptionCell.xib */; };
-		F68BDF051EEA9A830009BB81 /* MyTargetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68BDF041EEA9A830009BB81 /* MyTargetSDK.framework */; };
-		F68BDF061EEA9A830009BB81 /* MyTargetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68BDF041EEA9A830009BB81 /* MyTargetSDK.framework */; };
-		F68BDF071EEA9A830009BB81 /* MyTargetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68BDF041EEA9A830009BB81 /* MyTargetSDK.framework */; };
 		F68BDF1B1EF80DE90009BB81 /* MWMUGCCommentCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = F68BDF1A1EF80DE90009BB81 /* MWMUGCCommentCell.mm */; };
 		F68BDF1C1EF80DE90009BB81 /* MWMUGCCommentCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = F68BDF1A1EF80DE90009BB81 /* MWMUGCCommentCell.mm */; };
 		F68BDF1D1EF80DE90009BB81 /* MWMUGCCommentCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = F68BDF1A1EF80DE90009BB81 /* MWMUGCCommentCell.mm */; };
@@ -1236,9 +1188,6 @@
 		F6E2FD7C1E097BA00083EBEC /* MWMMapDownloaderExtendedDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6E2FC191E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSource.mm */; };
 		F6E2FD7D1E097BA00083EBEC /* MWMMapDownloaderExtendedDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6E2FC191E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSource.mm */; };
 		F6E2FD7E1E097BA00083EBEC /* MWMMapDownloaderExtendedDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6E2FC191E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSource.mm */; };
-		F6E2FD7F1E097BA00083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6E2FC1B1E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm */; };
-		F6E2FD801E097BA00083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6E2FC1B1E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm */; };
-		F6E2FD811E097BA00083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6E2FC1B1E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm */; };
 		F6E2FD821E097BA00083EBEC /* MWMMapDownloaderSearchDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6E2FC1D1E097B9F0083EBEC /* MWMMapDownloaderSearchDataSource.mm */; };
 		F6E2FD831E097BA00083EBEC /* MWMMapDownloaderSearchDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6E2FC1D1E097B9F0083EBEC /* MWMMapDownloaderSearchDataSource.mm */; };
 		F6E2FD841E097BA00083EBEC /* MWMMapDownloaderSearchDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6E2FC1D1E097B9F0083EBEC /* MWMMapDownloaderSearchDataSource.mm */; };
@@ -1659,37 +1608,6 @@
 		FAFF422A1347F101009BBB14 /* World.mwm in Resources */ = {isa = PBXBuildFile; fileRef = FAFF42291347F101009BBB14 /* World.mwm */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		347040371EA6628300038379 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34F407581E9E1D7A00E57AC0 /* Mopub.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 34F4074B1E9E1D3500E57AC0;
-			remoteInfo = Mopub;
-		};
-		3470403A1EA6628700038379 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34F407581E9E1D7A00E57AC0 /* Mopub.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 34F4074B1E9E1D3500E57AC0;
-			remoteInfo = Mopub;
-		};
-		3470403C1EA6628B00038379 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34F407581E9E1D7A00E57AC0 /* Mopub.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 34F4074B1E9E1D3500E57AC0;
-			remoteInfo = Mopub;
-		};
-		34F4075C1E9E1D7A00E57AC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34F407581E9E1D7A00E57AC0 /* Mopub.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 34F4074C1E9E1D3500E57AC0;
-			remoteInfo = Mopub;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		340D943B1E643AA700CB037A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -1771,13 +1689,6 @@
 		340474DE1E08199D00C92850 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		340474DF1E08199D00C92850 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		340474E01E08199D00C92850 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		340474E21E08199D00C92850 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		340474E31E08199D00C92850 /* FlurrySessionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurrySessionBuilder.h; sourceTree = "<group>"; };
-		340474E41E08199D00C92850 /* libFlurry_7.8.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.8.2.a; sourceTree = "<group>"; };
-		340474EA1E08199D00C92850 /* MWMMyTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMMyTarget.h; sourceTree = "<group>"; };
-		340474EB1E08199D00C92850 /* MWMMyTarget.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMMyTarget.mm; sourceTree = "<group>"; };
-		340474EC1E08199D00C92850 /* MWMMyTargetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMMyTargetDelegate.h; sourceTree = "<group>"; };
-		340474EE1E08199D00C92850 /* MyTrackerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyTrackerSDK.framework; sourceTree = "<group>"; };
 		340475151E081A4600C92850 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
 		340475161E081A4600C92850 /* AppInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = AppInfo.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		340475181E081A4600C92850 /* MWMKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMKeyboard.h; sourceTree = "<group>"; };
@@ -1989,8 +1900,6 @@
 		3486B5141E27AD3B0069C126 /* MWMFrameworkObservers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMFrameworkObservers.h; sourceTree = "<group>"; };
 		3486B51B1E27AD590069C126 /* MWMFrameworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMFrameworkHelper.h; sourceTree = "<group>"; };
 		3486B51C1E27AD590069C126 /* MWMFrameworkHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMFrameworkHelper.mm; sourceTree = "<group>"; };
-		3488B0101E9D0AEC0068AFD8 /* AdBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdBanner.swift; sourceTree = "<group>"; };
-		3488B0111E9D0AEC0068AFD8 /* AdBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdBanner.xib; sourceTree = "<group>"; };
 		3488B0181E9D0B230068AFD8 /* UIColor+Modifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Modifications.swift"; sourceTree = "<group>"; };
 		3488B03A1E9D13EF0068AFD8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		348A8DF11F66775A00D83026 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
@@ -2002,7 +1911,6 @@
 		3490D2DB1CE9DD2500D0B838 /* MWMSideButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMSideButtonsView.h; sourceTree = "<group>"; };
 		3490D2DC1CE9DD2500D0B838 /* MWMSideButtonsView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMSideButtonsView.mm; sourceTree = "<group>"; };
 		3490D2DD1CE9DD2500D0B838 /* MWMSideButtonsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MWMSideButtonsView.xib; sourceTree = "<group>"; };
-		34926BE51EA4C2A700DCF14C /* SearchBanners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBanners.swift; sourceTree = "<group>"; };
 		34943BB51E26222300B14F84 /* WelcomeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeProtocol.swift; sourceTree = "<group>"; };
 		34943BB91E2626B200B14F84 /* WelcomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePageController.swift; sourceTree = "<group>"; };
 		3495433C1EB22D9600F08F73 /* MPAdBrowserController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MPAdBrowserController.xib; path = 3party/MoPubSDK/Internal/Common/MPAdBrowserController.xib; sourceTree = "<group>"; };
@@ -2117,7 +2025,6 @@
 		34D7F3401F33903F001D5ED5 /* RouteManagerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteManagerHeaderView.swift; sourceTree = "<group>"; };
 		34D8087A1E793606002F0584 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		34D8087C1E79360D002F0584 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
-		34D808851E793F91002F0584 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pushwoosh.framework; path = Carthage/Build/iOS/Pushwoosh.framework; sourceTree = "<group>"; };
 		34E7760E1F14B165003040B3 /* VisibleArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleArea.swift; sourceTree = "<group>"; };
 		34E776121F14B17F003040B3 /* AvailableArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableArea.swift; sourceTree = "<group>"; };
 		34E776161F14B6E2003040B3 /* MWMAvailableAreaAffectDirection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMAvailableAreaAffectDirection.h; sourceTree = "<group>"; };
@@ -2130,18 +2037,6 @@
 		34EE25A01EFA68BC00F870AB /* PPViatorCarouselCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPViatorCarouselCell.xib; sourceTree = "<group>"; };
 		34EE25A41EFA6AD400F870AB /* ViatorElement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViatorElement.xib; sourceTree = "<group>"; };
 		34EE25A81EFA726400F870AB /* ViatorItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViatorItemModel.swift; sourceTree = "<group>"; };
-		34F4071D1E9E1AFF00E57AC0 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
-		34F4071E1E9E1AFF00E57AC0 /* BannersCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannersCache.swift; sourceTree = "<group>"; };
-		34F4071F1E9E1AFF00E57AC0 /* BannerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerType.swift; sourceTree = "<group>"; };
-		34F407201E9E1AFF00E57AC0 /* CoreBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreBanner.swift; sourceTree = "<group>"; };
-		34F407221E9E1AFF00E57AC0 /* FacebookBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookBanner.swift; sourceTree = "<group>"; };
-		34F407241E9E1AFF00E57AC0 /* MopubBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MopubBanner.swift; sourceTree = "<group>"; };
-		34F407251E9E1AFF00E57AC0 /* MPNativeAd+MWM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPNativeAd+MWM.h"; sourceTree = "<group>"; };
-		34F407261E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "MPNativeAd+MWM.mm"; sourceTree = "<group>"; };
-		34F407271E9E1AFF00E57AC0 /* MWMBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMBanner.h; sourceTree = "<group>"; };
-		34F407281E9E1AFF00E57AC0 /* MWMBannerHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMBannerHelpers.h; sourceTree = "<group>"; };
-		34F4072A1E9E1AFF00E57AC0 /* RBBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBBanner.swift; sourceTree = "<group>"; };
-		34F407581E9E1D7A00E57AC0 /* Mopub.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mopub.xcodeproj; path = MoPubSDK/Mopub.xcodeproj; sourceTree = "<group>"; };
 		34F4098A1E9E221700E57AC0 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = MoPubSDK/AdNetworkSupport/Facebook/SDK/FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		34F5E0D21E3F254800B1C415 /* UIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		34F5E0DA1E3F3ED300B1C415 /* MWMRoutePoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMRoutePoint.h; sourceTree = "<group>"; };
@@ -2280,6 +2175,10 @@
 		97A5967E19B9CD47007A963F /* copyright.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = copyright.html; path = ../../data/copyright.html; sourceTree = "<group>"; };
 		9DF04B231B71010E00DACAF1 /* 02_droidsans-fallback.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "02_droidsans-fallback.ttf"; path = "../../data/02_droidsans-fallback.ttf"; sourceTree = "<group>"; };
 		A367C93A1B17334800E2B6E7 /* resources-default */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "resources-default"; path = "../../data/resources-default"; sourceTree = "<group>"; };
+		AC79F11E1E534D0B00B7D954 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AC79F1201E534D4000B7D954 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AC79F1221E534DFA00B7D954 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AC79F1241E534E1700B7D954 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BB7626B41E8559980031D71C /* icudt57l.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = icudt57l.dat; path = ../../data/icudt57l.dat; sourceTree = "<group>"; };
 		ED48BBB317C267F5003E7E92 /* ColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerView.h; sourceTree = "<group>"; };
 		ED48BBB417C267F5003E7E92 /* ColorPickerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ColorPickerView.mm; sourceTree = "<group>"; };
@@ -2371,7 +2270,6 @@
 		F68224991E5B104600BC1C18 /* PPHotelDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPHotelDescriptionCell.swift; sourceTree = "<group>"; };
 		F682249D1E5B105900BC1C18 /* PPHotelDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPHotelDescriptionCell.xib; sourceTree = "<group>"; };
 		F68224A11E5B1B1A00BC1C18 /* MWMPlacePageButtonsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMPlacePageButtonsProtocol.h; sourceTree = "<group>"; };
-		F68BDF041EEA9A830009BB81 /* MyTargetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyTargetSDK.framework; sourceTree = "<group>"; };
 		F68BDF191EF80DE90009BB81 /* MWMUGCCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMUGCCommentCell.h; sourceTree = "<group>"; };
 		F68BDF1A1EF80DE90009BB81 /* MWMUGCCommentCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMUGCCommentCell.mm; sourceTree = "<group>"; };
 		F69018B61E9E601400B3C10B /* MWMAutoupdateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMAutoupdateController.h; sourceTree = "<group>"; };
@@ -2425,8 +2323,6 @@
 		F6E2FC171E097B9F0083EBEC /* MWMMapDownloaderDefaultDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = MWMMapDownloaderDefaultDataSource.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		F6E2FC181E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMMapDownloaderExtendedDataSource.h; sourceTree = "<group>"; };
 		F6E2FC191E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMMapDownloaderExtendedDataSource.mm; sourceTree = "<group>"; };
-		F6E2FC1A1E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMMapDownloaderExtendedDataSourceWithAds.h; sourceTree = "<group>"; };
-		F6E2FC1B1E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMMapDownloaderExtendedDataSourceWithAds.mm; sourceTree = "<group>"; };
 		F6E2FC1C1E097B9F0083EBEC /* MWMMapDownloaderSearchDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMMapDownloaderSearchDataSource.h; sourceTree = "<group>"; };
 		F6E2FC1D1E097B9F0083EBEC /* MWMMapDownloaderSearchDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMMapDownloaderSearchDataSource.mm; sourceTree = "<group>"; };
 		F6E2FC1E1E097B9F0083EBEC /* MWMBaseMapDownloaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMBaseMapDownloaderViewController.h; sourceTree = "<group>"; };
@@ -2683,24 +2579,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F68BDF051EEA9A830009BB81 /* MyTargetSDK.framework in Frameworks */,
-				341CF15E1E9E2AA9009AC928 /* libMopub.a in Frameworks */,
 				344D63171E795A2D006F17CB /* SystemConfiguration.framework in Frameworks */,
+				AC79F1251E534E1700B7D954 /* AudioToolbox.framework in Frameworks */,
+				AC79F1211E534D4000B7D954 /* CoreTelephony.framework in Frameworks */,
+				AC79F11F1E534D0B00B7D954 /* AVFoundation.framework in Frameworks */,
 				67B78B4B1E422E2E0018E590 /* CoreSpotlight.framework in Frameworks */,
 				67B78B4D1E422E2E0018E590 /* CoreData.framework in Frameworks */,
 				340474FC1E08199D00C92850 /* FBSDKShareKit.framework in Frameworks */,
 				34D808801E79361E002F0584 /* Alamofire.framework in Frameworks */,
 				340474F91E08199D00C92850 /* FBSDKLoginKit.framework in Frameworks */,
 				67B78B491E422E2E0018E590 /* iAd.framework in Frameworks */,
-				34D808871E793FA3002F0584 /* Pushwoosh.framework in Frameworks */,
 				340474F61E08199D00C92850 /* FBSDKCoreKit.framework in Frameworks */,
 				3488B03C1E9D14060068AFD8 /* UserNotifications.framework in Frameworks */,
 				340474F01E08199D00C92850 /* Crashlytics.framework in Frameworks */,
 				34570A3B1B13222600E6D4FD /* libz.dylib in Frameworks */,
 				34D8087E1E79361A002F0584 /* AlamofireImage.framework in Frameworks */,
-				340474FF1E08199D00C92850 /* libFlurry_7.8.2.a in Frameworks */,
 				67B78B4A1E422E2E0018E590 /* MessageUI.framework in Frameworks */,
-				3404750E1E08199E00C92850 /* MyTrackerSDK.framework in Frameworks */,
 				67B78B481E422E2E0018E590 /* MobileCoreServices.framework in Frameworks */,
 				34F4098B1E9E221700E57AC0 /* FBAudienceNetwork.framework in Frameworks */,
 				67B78B561E4233480018E590 /* AdSupport.framework in Frameworks */,
@@ -2717,12 +2611,10 @@
 				4586D0E71F4813AB00DF9CE5 /* libmwm_diff.a in Frameworks */,
 				4586D0C41F48121A00DF9CE5 /* libbsdiff.a in Frameworks */,
 				F6F8E3C51EF8469700F2DE8F /* libugc.a in Frameworks */,
-				34F409891E9E1DD200E57AC0 /* libMopub.a in Frameworks */,
 				3488B03B1E9D13EF0068AFD8 /* UserNotifications.framework in Frameworks */,
 				45FFD65D1E965EBE00DB854E /* liblocal_ads.a in Frameworks */,
 				34D1B6F11E95096B0057E9C7 /* libicu.a in Frameworks */,
 				671E78D31E6A423300B2859B /* librouting_common.a in Frameworks */,
-				34D808861E793F91002F0584 /* Pushwoosh.framework in Frameworks */,
 				34D8087B1E793606002F0584 /* Alamofire.framework in Frameworks */,
 				34F4098C1E9E221700E57AC0 /* FBAudienceNetwork.framework in Frameworks */,
 				34D8087D1E79360D002F0584 /* AlamofireImage.framework in Frameworks */,
@@ -2741,10 +2633,8 @@
 				6741AABD1BF356BA002C974C /* libagg.a in Frameworks */,
 				340474FA1E08199D00C92850 /* FBSDKLoginKit.framework in Frameworks */,
 				6741AABE1BF356BA002C974C /* libalohalitics.a in Frameworks */,
-				340475001E08199D00C92850 /* libFlurry_7.8.2.a in Frameworks */,
 				6741AAC01BF356BA002C974C /* libapi.a in Frameworks */,
 				6741AAC11BF356BA002C974C /* libbase.a in Frameworks */,
-				F68BDF061EEA9A830009BB81 /* MyTargetSDK.framework in Frameworks */,
 				6741AAC21BF356BA002C974C /* libcoding.a in Frameworks */,
 				6741AAC31BF356BA002C974C /* libexpat.a in Frameworks */,
 				6741AAC41BF356BA002C974C /* libfreetype.a in Frameworks */,
@@ -2761,7 +2651,6 @@
 				347A4C5E1C4E76C9006BA66E /* liboauthcpp.a in Frameworks */,
 				6741AACF1BF356BA002C974C /* libosrm.a in Frameworks */,
 				6741AAD01BF356BA002C974C /* libplatform.a in Frameworks */,
-				3404750F1E08199E00C92850 /* MyTrackerSDK.framework in Frameworks */,
 				6741AAD11BF356BA002C974C /* libprotobuf.a in Frameworks */,
 				6741AAD31BF356BA002C974C /* librouting.a in Frameworks */,
 				674A7E281C0DA573003D48E1 /* libstb_image.a in Frameworks */,
@@ -2781,8 +2670,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F68BDF071EEA9A830009BB81 /* MyTargetSDK.framework in Frameworks */,
-				341CF15F1E9E2ADC009AC928 /* libMopub.a in Frameworks */,
 				67B78B511E422E300018E590 /* CoreSpotlight.framework in Frameworks */,
 				67B78B531E422E300018E590 /* CoreData.framework in Frameworks */,
 				340474FE1E08199D00C92850 /* FBSDKShareKit.framework in Frameworks */,
@@ -2790,15 +2677,12 @@
 				340474FB1E08199D00C92850 /* FBSDKLoginKit.framework in Frameworks */,
 				67B78B4F1E422E300018E590 /* iAd.framework in Frameworks */,
 				344D63191E795A3C006F17CB /* SystemConfiguration.framework in Frameworks */,
-				34D808881E793FA4002F0584 /* Pushwoosh.framework in Frameworks */,
 				340474F81E08199D00C92850 /* FBSDKCoreKit.framework in Frameworks */,
 				3488B03D1E9D14070068AFD8 /* UserNotifications.framework in Frameworks */,
 				340474F21E08199D00C92850 /* Crashlytics.framework in Frameworks */,
 				849CF7861DE842290024A8A5 /* libz.dylib in Frameworks */,
 				34D8087F1E79361B002F0584 /* AlamofireImage.framework in Frameworks */,
-				340475011E08199D00C92850 /* libFlurry_7.8.2.a in Frameworks */,
 				67B78B501E422E300018E590 /* MessageUI.framework in Frameworks */,
-				340475101E08199E00C92850 /* MyTrackerSDK.framework in Frameworks */,
 				67B78B4E1E422E300018E590 /* MobileCoreServices.framework in Frameworks */,
 				34F4098D1E9E221700E57AC0 /* FBAudienceNetwork.framework in Frameworks */,
 				67B78B571E42334A0018E590 /* AdSupport.framework in Frameworks */,
@@ -2901,6 +2785,10 @@
 				4586D0E61F4813AB00DF9CE5 /* libmwm_diff.a */,
 				4586D0C31F48121A00DF9CE5 /* libbsdiff.a */,
 				F6F8E3C41EF8469700F2DE8F /* libugc.a */,
+				AC79F1241E534E1700B7D954 /* AudioToolbox.framework */,
+				AC79F1221E534DFA00B7D954 /* SystemConfiguration.framework */,
+				AC79F1201E534D4000B7D954 /* CoreTelephony.framework */,
+				AC79F11E1E534D0B00B7D954 /* AVFoundation.framework */,
 				340474DB1E08199D00C92850 /* 3party */,
 				6741AAA21BF356B9002C974C /* libagg.a */,
 				6741AAA31BF356B9002C974C /* libalohalitics.a */,
@@ -2956,7 +2844,6 @@
 		340474DB1E08199D00C92850 /* 3party */ = {
 			isa = PBXGroup;
 			children = (
-				34F407581E9E1D7A00E57AC0 /* Mopub.xcodeproj */,
 				34D8087A1E793606002F0584 /* Alamofire.framework */,
 				34D8087C1E79360D002F0584 /* AlamofireImage.framework */,
 				3432E1771E49B3A2008477E9 /* Bolts.framework */,
@@ -2966,33 +2853,8 @@
 				340474DE1E08199D00C92850 /* FBSDKCoreKit.framework */,
 				340474DF1E08199D00C92850 /* FBSDKLoginKit.framework */,
 				340474E01E08199D00C92850 /* FBSDKShareKit.framework */,
-				340474E11E08199D00C92850 /* Flurry */,
-				340474E91E08199D00C92850 /* MyTarget */,
-				340474EE1E08199D00C92850 /* MyTrackerSDK.framework */,
-				34D808851E793F91002F0584 /* Pushwoosh.framework */,
 			);
 			path = 3party;
-			sourceTree = "<group>";
-		};
-		340474E11E08199D00C92850 /* Flurry */ = {
-			isa = PBXGroup;
-			children = (
-				340474E21E08199D00C92850 /* Flurry.h */,
-				340474E31E08199D00C92850 /* FlurrySessionBuilder.h */,
-				340474E41E08199D00C92850 /* libFlurry_7.8.2.a */,
-			);
-			path = Flurry;
-			sourceTree = "<group>";
-		};
-		340474E91E08199D00C92850 /* MyTarget */ = {
-			isa = PBXGroup;
-			children = (
-				340474EA1E08199D00C92850 /* MWMMyTarget.h */,
-				340474EB1E08199D00C92850 /* MWMMyTarget.mm */,
-				340474EC1E08199D00C92850 /* MWMMyTargetDelegate.h */,
-				F68BDF041EEA9A830009BB81 /* MyTargetSDK.framework */,
-			);
-			path = MyTarget;
 			sourceTree = "<group>";
 		};
 		340475141E081A4600C92850 /* Common */ = {
@@ -3041,7 +2903,6 @@
 			isa = PBXGroup;
 			children = (
 				34763EE31F2F392300F4D2D3 /* TextToSpeech */,
-				34F4071C1E9E1AFF00E57AC0 /* Ads */,
 				3486B50F1E27AD3B0069C126 /* Framework */,
 				340475291E081A4600C92850 /* Location */,
 				340475301E081A4600C92850 /* NetworkPolicy */,
@@ -3105,7 +2966,6 @@
 				3404753E1E081A4600C92850 /* MWMSearchObserver.h */,
 				3430643F1E9FDC7300DC7665 /* SearchIndex.swift */,
 				342639461EA0FDB30025EB89 /* MWMSearchItemType.h */,
-				34926BE51EA4C2A700DCF14C /* SearchBanners.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -3195,8 +3055,6 @@
 		3432E17F1E49BEFA008477E9 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
-				3488B0101E9D0AEC0068AFD8 /* AdBanner.swift */,
-				3488B0111E9D0AEC0068AFD8 /* AdBanner.xib */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -3701,56 +3559,6 @@
 			path = ViatorCells;
 			sourceTree = "<group>";
 		};
-		34F4071C1E9E1AFF00E57AC0 /* Ads */ = {
-			isa = PBXGroup;
-			children = (
-				34F4071D1E9E1AFF00E57AC0 /* Banner.swift */,
-				34F4071E1E9E1AFF00E57AC0 /* BannersCache.swift */,
-				34F4071F1E9E1AFF00E57AC0 /* BannerType.swift */,
-				34F407201E9E1AFF00E57AC0 /* CoreBanner.swift */,
-				34F407211E9E1AFF00E57AC0 /* Facebook */,
-				34F407231E9E1AFF00E57AC0 /* Mopub */,
-				34F407271E9E1AFF00E57AC0 /* MWMBanner.h */,
-				34F407281E9E1AFF00E57AC0 /* MWMBannerHelpers.h */,
-				34F407291E9E1AFF00E57AC0 /* RB */,
-			);
-			path = Ads;
-			sourceTree = "<group>";
-		};
-		34F407211E9E1AFF00E57AC0 /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				34F407221E9E1AFF00E57AC0 /* FacebookBanner.swift */,
-			);
-			path = Facebook;
-			sourceTree = "<group>";
-		};
-		34F407231E9E1AFF00E57AC0 /* Mopub */ = {
-			isa = PBXGroup;
-			children = (
-				34F407241E9E1AFF00E57AC0 /* MopubBanner.swift */,
-				34F407251E9E1AFF00E57AC0 /* MPNativeAd+MWM.h */,
-				34F407261E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm */,
-			);
-			path = Mopub;
-			sourceTree = "<group>";
-		};
-		34F407291E9E1AFF00E57AC0 /* RB */ = {
-			isa = PBXGroup;
-			children = (
-				34F4072A1E9E1AFF00E57AC0 /* RBBanner.swift */,
-			);
-			path = RB;
-			sourceTree = "<group>";
-		};
-		34F407591E9E1D7A00E57AC0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				34F4075D1E9E1D7A00E57AC0 /* libMopub.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		34F73F5E1E082FF700AC1FD6 /* LocalizedStrings */ = {
 			isa = PBXGroup;
 			children = (
@@ -4101,8 +3909,6 @@
 				F6E2FC171E097B9F0083EBEC /* MWMMapDownloaderDefaultDataSource.mm */,
 				F6E2FC181E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSource.h */,
 				F6E2FC191E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSource.mm */,
-				F6E2FC1A1E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.h */,
-				F6E2FC1B1E097B9F0083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm */,
 				F6E2FC1C1E097B9F0083EBEC /* MWMMapDownloaderSearchDataSource.h */,
 				F6E2FC1D1E097B9F0083EBEC /* MWMMapDownloaderSearchDataSource.mm */,
 			);
@@ -4688,7 +4494,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				347040381EA6628300038379 /* PBXTargetDependency */,
 			);
 			name = MAPS.ME;
 			productName = Maps;
@@ -4710,7 +4515,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3470403B1EA6628700038379 /* PBXTargetDependency */,
 			);
 			name = xcMAPS.ME;
 			productName = Maps;
@@ -4733,7 +4537,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3470403D1EA6628B00038379 /* PBXTargetDependency */,
 			);
 			name = cmMAPS.ME;
 			productName = Maps;
@@ -4750,7 +4553,7 @@
 				ORGANIZATIONNAME = MapsWithMe;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 3T6FSDE8C7;
+						DevelopmentTeam = M4LKQN3HR8;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -4760,26 +4563,12 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
-							com.apple.InAppPurchase = {
-								enabled = 0;
-							};
-							com.apple.Push = {
-								enabled = 1;
-							};
-							com.apple.Wallet = {
-								enabled = 0;
-							};
 						};
 					};
 					6741A93D1BF340DE002C974C = {
 						DevelopmentTeam = 3T6FSDE8C7;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.Push = {
-								enabled = 1;
-							};
-						};
 					};
 					849CF5E21DE842290024A8A5 = {
 						DevelopmentTeam = 3T6FSDE8C7;
@@ -4831,12 +4620,6 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Maps */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 34F407591E9E1D7A00E57AC0 /* Products */;
-					ProjectRef = 34F407581E9E1D7A00E57AC0 /* Mopub.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* MAPS.ME */,
@@ -4845,16 +4628,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		34F4075D1E9E1D7A00E57AC0 /* libMopub.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMopub.a;
-			remoteRef = 34F4075C1E9E1D7A00E57AC0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -4981,7 +4754,6 @@
 				F63774E71B59375E00BCF54D /* MWMRoutingDisclaimerAlert.xib in Resources */,
 				F6E2FEFF1E097BA00083EBEC /* MWMSearchCategoryCell.xib in Resources */,
 				F69CE8DD1E5C51AB002B5881 /* CarouselElement.xib in Resources */,
-				3488B0151E9D0AEC0068AFD8 /* AdBanner.xib in Resources */,
 				F6E2FF321E097BA00083EBEC /* MWMSearchCommonCell.xib in Resources */,
 				BB7626B51E8559980031D71C /* icudt57l.dat in Resources */,
 				F6E2FF051E097BA00083EBEC /* MWMSearchHistoryClearCell.xib in Resources */,
@@ -5164,7 +4936,6 @@
 				F6E2FF001E097BA00083EBEC /* MWMSearchCategoryCell.xib in Resources */,
 				F6E2FF331E097BA00083EBEC /* MWMSearchCommonCell.xib in Resources */,
 				F6E2FF061E097BA00083EBEC /* MWMSearchHistoryClearCell.xib in Resources */,
-				3488B0161E9D0AEC0068AFD8 /* AdBanner.xib in Resources */,
 				BB7626B61E85599C0031D71C /* icudt57l.dat in Resources */,
 				F6E2FF151E097BA00083EBEC /* MWMSearchHistoryRequestCell.xib in Resources */,
 				F6E2FEE81E097BA00083EBEC /* MWMSearchNoResults.xib in Resources */,
@@ -5347,7 +5118,6 @@
 				849CF6191DE842290024A8A5 /* MWMRoutingDisclaimerAlert.xib in Resources */,
 				F6E2FF011E097BA00083EBEC /* MWMSearchCategoryCell.xib in Resources */,
 				F6E2FF341E097BA00083EBEC /* MWMSearchCommonCell.xib in Resources */,
-				3488B0171E9D0AEC0068AFD8 /* AdBanner.xib in Resources */,
 				F6E2FF071E097BA00083EBEC /* MWMSearchHistoryClearCell.xib in Resources */,
 				BB7626B71E85599C0031D71C /* icudt57l.dat in Resources */,
 				341B10761E55B15B00071C74 /* MWMMobileInternetAlert.xib in Resources */,
@@ -5570,13 +5340,11 @@
 				34F742311E0834F400AC1FD6 /* UIViewController+Navigation.mm in Sources */,
 				340475801E081B3300C92850 /* iosOGLContextFactory.mm in Sources */,
 				3486B51D1E27AD590069C126 /* MWMFrameworkHelper.mm in Sources */,
-				34F4072E1E9E1AFF00E57AC0 /* BannersCache.swift in Sources */,
 				34D3B0201E389D05004100F9 /* MWMEditorAddAdditionalNameTableViewCell.mm in Sources */,
 				F6E2FE481E097BA00083EBEC /* MWMPlacePageData.mm in Sources */,
 				3404754F1E081A4600C92850 /* fabric_logging_ios.mm in Sources */,
 				34C5B81B1F3367E1005E50B6 /* RouteManagerTransitioningManager.swift in Sources */,
 				34ABA6281C2D567B00FE1BEC /* MWMInputLoginValidator.mm in Sources */,
-				34F4073D1E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm in Sources */,
 				F69018B81E9E601400B3C10B /* MWMAutoupdateController.mm in Sources */,
 				347E1A961F1F7404002BF7A8 /* CianElement.swift in Sources */,
 				F6E2FECF1E097BA00083EBEC /* MWMSearchFilterViewController.mm in Sources */,
@@ -5648,7 +5416,6 @@
 				346DB8331E5C4F6700E3123E /* GalleryViewController.swift in Sources */,
 				F6E2FDFD1E097BA00083EBEC /* MWMOpeningHoursClosedSpanTableViewCell.mm in Sources */,
 				F6E2FEDB1E097BA00083EBEC /* MWMSearchManager+Filter.mm in Sources */,
-				34F4073A1E9E1AFF00E57AC0 /* MopubBanner.swift in Sources */,
 				34943BB61E26222300B14F84 /* WelcomeProtocol.swift in Sources */,
 				F6E2FD5E1E097BA00083EBEC /* MWMMapDownloaderLargeCountryTableViewCell.mm in Sources */,
 				F6558DA11E642CC0002203AE /* MWMFacilitiesController.mm in Sources */,
@@ -5661,7 +5428,6 @@
 				F6E2FE301E097BA00083EBEC /* MWMStreetEditorViewController.mm in Sources */,
 				340416471E7BF28E00E2B6D6 /* UIView+Snapshot.swift in Sources */,
 				F6E2FE271E097BA00083EBEC /* MWMOpeningHoursSection.mm in Sources */,
-				34F407341E9E1AFF00E57AC0 /* CoreBanner.swift in Sources */,
 				F6E2FE241E097BA00083EBEC /* MWMOpeningHoursModel.mm in Sources */,
 				342360A71F34906700AFE44D /* RouteManagerCell.swift in Sources */,
 				34D3B0351E389D05004100F9 /* MWMEditorSelectTableViewCell.mm in Sources */,
@@ -5697,22 +5463,18 @@
 				340475581E081A4600C92850 /* WebViewController.mm in Sources */,
 				F6FEA82D1C58E89B007223CC /* MWMButton.mm in Sources */,
 				348A8DFA1F66775A00D83026 /* RatingViewSettings.swift in Sources */,
-				34F407401E9E1AFF00E57AC0 /* RBBanner.swift in Sources */,
 				3444DFD11F17620C00E73099 /* MWMMapWidgetsHelper.mm in Sources */,
 				F6E2FE3C1E097BA00083EBEC /* MWMMigrationViewController.mm in Sources */,
 				F6150E471EFA5C94000B955D /* UGCTextReviewCell.swift in Sources */,
 				F6E2FD4F1E097BA00083EBEC /* MWMMapDownloaderAdsTableViewCell.mm in Sources */,
 				F6E2FE871E097BA00083EBEC /* MWMPlacePageRegularCell.mm in Sources */,
 				34D3AFE91E378AF1004100F9 /* UINib+Init.swift in Sources */,
-				F6E2FD7F1E097BA00083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm in Sources */,
-				34F407311E9E1AFF00E57AC0 /* BannerType.swift in Sources */,
 				F63AF5121EA6250F00A1DB98 /* FilterCollectionHolderCell.swift in Sources */,
 				F6BD33871B62412E00F2CE18 /* MWMNavigationDashboardEntity.mm in Sources */,
 				FA36B80D15403A4F004560CC /* BookmarksVC.mm in Sources */,
 				349B926C1DF0518E007779DD /* MWMToast.mm in Sources */,
 				3490D2E01CE9DD2500D0B838 /* MWMSideButtonsView.mm in Sources */,
 				340475491E081A4600C92850 /* AppInfo.mm in Sources */,
-				34F4072B1E9E1AFF00E57AC0 /* Banner.swift in Sources */,
 				F660DEE41EAF4F59004DC056 /* MWMLocationManager+SpeedAndAltitude.swift in Sources */,
 				F6E2FDF11E097BA00083EBEC /* MWMOpeningHoursAddScheduleTableViewCell.mm in Sources */,
 				F6E2FD821E097BA00083EBEC /* MWMMapDownloaderSearchDataSource.mm in Sources */,
@@ -5754,7 +5516,6 @@
 				3454D7C71E07F045004AF2AD /* UIButton+RuntimeAttributes.mm in Sources */,
 				FAAEA7D5161D8D3100CCD661 /* BookmarksRootVC.mm in Sources */,
 				3404755E1E081A4600C92850 /* MWMLocationPredictor.mm in Sources */,
-				3488B0121E9D0AEC0068AFD8 /* AdBanner.swift in Sources */,
 				F6E2FE031E097BA00083EBEC /* MWMOpeningHoursDaysSelectorTableViewCell.mm in Sources */,
 				F6E2FE661E097BA00083EBEC /* MWMPlacePageButtonCell.mm in Sources */,
 				F6E2FE121E097BA00083EBEC /* MWMOpeningHoursTimeSelectorTableViewCell.mm in Sources */,
@@ -5767,7 +5528,6 @@
 				3454D7BB1E07F045004AF2AD /* CLLocation+Mercator.mm in Sources */,
 				F6E2FF4D1E097BA00083EBEC /* MWMAboutController.mm in Sources */,
 				34F5E0D31E3F254800B1C415 /* UIView+Hierarchy.swift in Sources */,
-				34F407371E9E1AFF00E57AC0 /* FacebookBanner.swift in Sources */,
 				340708601F28FE2800029ECC /* MWMiPadRoutePreview.mm in Sources */,
 				F6150E291EF95234000B955D /* MWMUGCReviewController.mm in Sources */,
 				3497A93A1B5CF8A900F51E55 /* MWMNavigationDashboardManager.mm in Sources */,
@@ -5809,7 +5569,6 @@
 				346EDADB1B9F0E35004F8DB5 /* MWMMultilineLabel.mm in Sources */,
 				34D3B0291E389D05004100F9 /* MWMEditorAdditionalNameTableViewCell.mm in Sources */,
 				34E776261F14FE77003040B3 /* NavigationStreetNameView.swift in Sources */,
-				34926BE61EA4C2A700DCF14C /* SearchBanners.swift in Sources */,
 				34D4FA621E26572D003F53EF /* FirstLaunchController.swift in Sources */,
 				34C9BD041C6DB693000DC38D /* MWMViewController.mm in Sources */,
 				3404165B1E7C29AE00E2B6D6 /* PhotosInteractionAnimator.swift in Sources */,
@@ -5829,7 +5588,6 @@
 				346B42AB1DD5E3D20094EBEE /* MWMLocationNotFoundAlert.mm in Sources */,
 				F6E2FF021E097BA00083EBEC /* MWMSearchHistoryClearCell.mm in Sources */,
 				F63774EA1B59376F00BCF54D /* MWMRoutingDisclaimerAlert.mm in Sources */,
-				340475081E08199E00C92850 /* MWMMyTarget.mm in Sources */,
 				3404164F1E7C085F00E2B6D6 /* PhotoViewController.swift in Sources */,
 				F64F19A31AB81A00006EAF7E /* MWMDownloadTransitMapAlert.mm in Sources */,
 				3404754C1E081A4600C92850 /* MWMKeyboard.mm in Sources */,
@@ -5915,13 +5673,11 @@
 				34F742321E0834F400AC1FD6 /* UIViewController+Navigation.mm in Sources */,
 				340475811E081B3300C92850 /* iosOGLContextFactory.mm in Sources */,
 				6741A9B11BF340DE002C974C /* MWMAPIBarView.mm in Sources */,
-				34F4072F1E9E1AFF00E57AC0 /* BannersCache.swift in Sources */,
 				34D3B0211E389D05004100F9 /* MWMEditorAddAdditionalNameTableViewCell.mm in Sources */,
 				3486B51E1E27AD590069C126 /* MWMFrameworkHelper.mm in Sources */,
 				F6E2FE491E097BA00083EBEC /* MWMPlacePageData.mm in Sources */,
 				34C5B81C1F3367E1005E50B6 /* RouteManagerTransitioningManager.swift in Sources */,
 				340475501E081A4600C92850 /* fabric_logging_ios.mm in Sources */,
-				34F4073E1E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm in Sources */,
 				F6E2FED01E097BA00083EBEC /* MWMSearchFilterViewController.mm in Sources */,
 				347E1A971F1F7404002BF7A8 /* CianElement.swift in Sources */,
 				34D4FA671E265749003F53EF /* WhatsNewController.swift in Sources */,
@@ -5990,7 +5746,6 @@
 				346DB8341E5C4F6700E3123E /* GalleryViewController.swift in Sources */,
 				34943BB71E26222300B14F84 /* WelcomeProtocol.swift in Sources */,
 				F6E2FD5F1E097BA00083EBEC /* MWMMapDownloaderLargeCountryTableViewCell.mm in Sources */,
-				34F4073B1E9E1AFF00E57AC0 /* MopubBanner.swift in Sources */,
 				F6E2FF481E097BA00083EBEC /* SettingsTableViewSelectableCell.swift in Sources */,
 				F6E2FF271E097BA00083EBEC /* MWMSearchTabButtonsView.mm in Sources */,
 				F6558DA21E642CC0002203AE /* MWMFacilitiesController.mm in Sources */,
@@ -6003,7 +5758,6 @@
 				3406FA161C6E0C3300E9FAD2 /* MWMMapDownloadDialog.mm in Sources */,
 				340416481E7BF28E00E2B6D6 /* UIView+Snapshot.swift in Sources */,
 				F6E2FE251E097BA00083EBEC /* MWMOpeningHoursModel.mm in Sources */,
-				34F407351E9E1AFF00E57AC0 /* CoreBanner.swift in Sources */,
 				34C9BD031C6DB693000DC38D /* MWMTableViewController.mm in Sources */,
 				F6E2FD8C1E097BA00083EBEC /* MWMNoMapsView.mm in Sources */,
 				34D3B0361E389D05004100F9 /* MWMEditorSelectTableViewCell.mm in Sources */,
@@ -6039,7 +5793,6 @@
 				6741A9EC1BF340DE002C974C /* MWMCircularProgress.mm in Sources */,
 				342CC5F21C2D7730005F3FE5 /* MWMAuthorizationLoginViewController.mm in Sources */,
 				340475591E081A4600C92850 /* WebViewController.mm in Sources */,
-				34F407411E9E1AFF00E57AC0 /* RBBanner.swift in Sources */,
 				3444DFD21F17620C00E73099 /* MWMMapWidgetsHelper.mm in Sources */,
 				348A8DFB1F66775A00D83026 /* RatingViewSettings.swift in Sources */,
 				F6E2FE3D1E097BA00083EBEC /* MWMMigrationViewController.mm in Sources */,
@@ -6047,16 +5800,13 @@
 				340708561F28F1E900029ECC /* MWMRoutePreview.mm in Sources */,
 				F6E2FD501E097BA00083EBEC /* MWMMapDownloaderAdsTableViewCell.mm in Sources */,
 				F6E2FE881E097BA00083EBEC /* MWMPlacePageRegularCell.mm in Sources */,
-				F6E2FD801E097BA00083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm in Sources */,
 				34D3AFEA1E378AF1004100F9 /* UINib+Init.swift in Sources */,
-				34F407321E9E1AFF00E57AC0 /* BannerType.swift in Sources */,
 				F63AF5131EA6250F00A1DB98 /* FilterCollectionHolderCell.swift in Sources */,
 				6741A9F11BF340DE002C974C /* MWMNavigationDashboardEntity.mm in Sources */,
 				56C74C391C74A3BC00B71B9F /* MWMInputEmailValidator.mm in Sources */,
 				6741A9F51BF340DE002C974C /* BookmarksVC.mm in Sources */,
 				349B926D1DF0518E007779DD /* MWMToast.mm in Sources */,
 				3404754A1E081A4600C92850 /* AppInfo.mm in Sources */,
-				34F4072C1E9E1AFF00E57AC0 /* Banner.swift in Sources */,
 				F660DEE51EAF4F59004DC056 /* MWMLocationManager+SpeedAndAltitude.swift in Sources */,
 				F6E2FDF21E097BA00083EBEC /* MWMOpeningHoursAddScheduleTableViewCell.mm in Sources */,
 				F6E2FD831E097BA00083EBEC /* MWMMapDownloaderSearchDataSource.mm in Sources */,
@@ -6098,7 +5848,6 @@
 				F6E2FE9D1E097BA00083EBEC /* MWMiPhonePlacePageLayoutImpl.mm in Sources */,
 				3454D7C81E07F045004AF2AD /* UIButton+RuntimeAttributes.mm in Sources */,
 				6741AA041BF340DE002C974C /* MWMNavigationDashboardManager.mm in Sources */,
-				3488B0131E9D0AEC0068AFD8 /* AdBanner.swift in Sources */,
 				3404755F1E081A4600C92850 /* MWMLocationPredictor.mm in Sources */,
 				F6E2FE041E097BA00083EBEC /* MWMOpeningHoursDaysSelectorTableViewCell.mm in Sources */,
 				F6E2FE671E097BA00083EBEC /* MWMPlacePageButtonCell.mm in Sources */,
@@ -6111,7 +5860,6 @@
 				3404755C1E081A4600C92850 /* MWMLocationManager.mm in Sources */,
 				3454D7BC1E07F045004AF2AD /* CLLocation+Mercator.mm in Sources */,
 				F6E2FF4E1E097BA00083EBEC /* MWMAboutController.mm in Sources */,
-				34F407381E9E1AFF00E57AC0 /* FacebookBanner.swift in Sources */,
 				F6150E2A1EF95234000B955D /* MWMUGCReviewController.mm in Sources */,
 				340708611F28FE2800029ECC /* MWMiPadRoutePreview.mm in Sources */,
 				34F5E0D41E3F254800B1C415 /* UIView+Hierarchy.swift in Sources */,
@@ -6155,7 +5903,6 @@
 				F6E2FDA41E097BA00083EBEC /* MWMCuisineEditorViewController.mm in Sources */,
 				3454D7CB1E07F045004AF2AD /* UIColor+MapsMeColor.mm in Sources */,
 				34E776271F14FE77003040B3 /* NavigationStreetNameView.swift in Sources */,
-				34926BE71EA4C2A700DCF14C /* SearchBanners.swift in Sources */,
 				34D3B02A1E389D05004100F9 /* MWMEditorAdditionalNameTableViewCell.mm in Sources */,
 				340475711E081A4600C92850 /* MWMSettings.mm in Sources */,
 				3404165C1E7C29AE00E2B6D6 /* PhotosInteractionAnimator.swift in Sources */,
@@ -6174,7 +5921,6 @@
 				340475771E081A4600C92850 /* MWMTrafficManager.mm in Sources */,
 				346B42AC1DD5E3D20094EBEE /* MWMLocationNotFoundAlert.mm in Sources */,
 				F6E2FF031E097BA00083EBEC /* MWMSearchHistoryClearCell.mm in Sources */,
-				340475091E08199E00C92850 /* MWMMyTarget.mm in Sources */,
 				340416501E7C086000E2B6D6 /* PhotoViewController.swift in Sources */,
 				674A7E301C0DB10B003D48E1 /* MWMMapWidgets.mm in Sources */,
 				3404754D1E081A4600C92850 /* MWMKeyboard.mm in Sources */,
@@ -6261,13 +6007,11 @@
 				34F742331E0834F400AC1FD6 /* UIViewController+Navigation.mm in Sources */,
 				849CF6911DE842290024A8A5 /* MWMSideButtons.mm in Sources */,
 				849CF6971DE842290024A8A5 /* MapsAppDelegate.mm in Sources */,
-				34F407301E9E1AFF00E57AC0 /* BannersCache.swift in Sources */,
 				34D3B0221E389D05004100F9 /* MWMEditorAddAdditionalNameTableViewCell.mm in Sources */,
 				3486B51F1E27AD590069C126 /* MWMFrameworkHelper.mm in Sources */,
 				34C5B81D1F3367E1005E50B6 /* RouteManagerTransitioningManager.swift in Sources */,
 				F6E2FE4A1E097BA00083EBEC /* MWMPlacePageData.mm in Sources */,
 				849CF6981DE842290024A8A5 /* MWMAPIBarView.mm in Sources */,
-				34F4073F1E9E1AFF00E57AC0 /* MPNativeAd+MWM.mm in Sources */,
 				849CF69D1DE842290024A8A5 /* MWMInputLoginValidator.mm in Sources */,
 				F6E2FED11E097BA00083EBEC /* MWMSearchFilterViewController.mm in Sources */,
 				347E1A981F1F7404002BF7A8 /* CianElement.swift in Sources */,
@@ -6337,7 +6081,6 @@
 				346DB8351E5C4F6700E3123E /* GalleryViewController.swift in Sources */,
 				F6E2FDFF1E097BA00083EBEC /* MWMOpeningHoursClosedSpanTableViewCell.mm in Sources */,
 				F6E2FEDD1E097BA00083EBEC /* MWMSearchManager+Filter.mm in Sources */,
-				34F4073C1E9E1AFF00E57AC0 /* MopubBanner.swift in Sources */,
 				34943BB81E26222300B14F84 /* WelcomeProtocol.swift in Sources */,
 				F6E2FD601E097BA00083EBEC /* MWMMapDownloaderLargeCountryTableViewCell.mm in Sources */,
 				F6558DA31E642CC0002203AE /* MWMFacilitiesController.mm in Sources */,
@@ -6350,7 +6093,6 @@
 				F6E2FE321E097BA00083EBEC /* MWMStreetEditorViewController.mm in Sources */,
 				340416491E7BF28E00E2B6D6 /* UIView+Snapshot.swift in Sources */,
 				F6E2FE291E097BA00083EBEC /* MWMOpeningHoursSection.mm in Sources */,
-				34F407361E9E1AFF00E57AC0 /* CoreBanner.swift in Sources */,
 				849CF6D31DE842290024A8A5 /* MWMMapDownloadDialog.mm in Sources */,
 				F6E2FE261E097BA00083EBEC /* MWMOpeningHoursModel.mm in Sources */,
 				342360A91F34906700AFE44D /* RouteManagerCell.swift in Sources */,
@@ -6385,7 +6127,6 @@
 				849CF6E71DE842290024A8A5 /* MWMSearchNoResultsAlert.mm in Sources */,
 				3454D7E41E07F045004AF2AD /* UITextView+RuntimeAttributes.mm in Sources */,
 				849CF6E91DE842290024A8A5 /* MWMCircularProgressView.mm in Sources */,
-				34F407421E9E1AFF00E57AC0 /* RBBanner.swift in Sources */,
 				348A8DFC1F66775A00D83026 /* RatingViewSettings.swift in Sources */,
 				3444DFD31F17620C00E73099 /* MWMMapWidgetsHelper.mm in Sources */,
 				F6E2FE3E1E097BA00083EBEC /* MWMMigrationViewController.mm in Sources */,
@@ -6394,15 +6135,12 @@
 				F6E2FD511E097BA00083EBEC /* MWMMapDownloaderAdsTableViewCell.mm in Sources */,
 				F6E2FE891E097BA00083EBEC /* MWMPlacePageRegularCell.mm in Sources */,
 				34D3AFEB1E378AF1004100F9 /* UINib+Init.swift in Sources */,
-				F6E2FD811E097BA00083EBEC /* MWMMapDownloaderExtendedDataSourceWithAds.mm in Sources */,
-				34F407331E9E1AFF00E57AC0 /* BannerType.swift in Sources */,
 				F63AF5141EA6250F00A1DB98 /* FilterCollectionHolderCell.swift in Sources */,
 				849CF6EB1DE842290024A8A5 /* MWMAPIBar.mm in Sources */,
 				3404755D1E081A4600C92850 /* MWMLocationManager.mm in Sources */,
 				849CF6ED1DE842290024A8A5 /* MWMAuthorizationLoginViewController.mm in Sources */,
 				849CF6F11DE842290024A8A5 /* MWMCircularProgress.mm in Sources */,
 				849CF6F31DE842290024A8A5 /* MWMButton.mm in Sources */,
-				34F4072D1E9E1AFF00E57AC0 /* Banner.swift in Sources */,
 				F660DEE61EAF4F59004DC056 /* MWMLocationManager+SpeedAndAltitude.swift in Sources */,
 				F6E2FDF31E097BA00083EBEC /* MWMOpeningHoursAddScheduleTableViewCell.mm in Sources */,
 				3407085D1F28F27200029ECC /* RoutePreviewTaxiCell.swift in Sources */,
@@ -6444,7 +6182,6 @@
 				340475721E081A4600C92850 /* MWMSettings.mm in Sources */,
 				849CF7121DE842290024A8A5 /* SelectSetVC.mm in Sources */,
 				849CF7141DE842290024A8A5 /* AddSetVC.mm in Sources */,
-				3488B0141E9D0AEC0068AFD8 /* AdBanner.swift in Sources */,
 				F6E2FE051E097BA00083EBEC /* MWMOpeningHoursDaysSelectorTableViewCell.mm in Sources */,
 				F6E2FE681E097BA00083EBEC /* MWMPlacePageButtonCell.mm in Sources */,
 				F6E2FE141E097BA00083EBEC /* MWMOpeningHoursTimeSelectorTableViewCell.mm in Sources */,
@@ -6457,7 +6194,6 @@
 				849CF71A1DE842290024A8A5 /* MWMDropDown.mm in Sources */,
 				F6E2FF4F1E097BA00083EBEC /* MWMAboutController.mm in Sources */,
 				34F5E0D51E3F254800B1C415 /* UIView+Hierarchy.swift in Sources */,
-				34F407391E9E1AFF00E57AC0 /* FacebookBanner.swift in Sources */,
 				340708621F28FE2800029ECC /* MWMiPadRoutePreview.mm in Sources */,
 				F6150E2B1EF95234000B955D /* MWMUGCReviewController.mm in Sources */,
 				849CF71D1DE842290024A8A5 /* MWMNavigationDashboardManager.mm in Sources */,
@@ -6501,7 +6237,6 @@
 				34D4FA641E26572D003F53EF /* FirstLaunchController.swift in Sources */,
 				34D3B02B1E389D05004100F9 /* MWMEditorAdditionalNameTableViewCell.mm in Sources */,
 				34E776281F14FE77003040B3 /* NavigationStreetNameView.swift in Sources */,
-				34926BE81EA4C2A700DCF14C /* SearchBanners.swift in Sources */,
 				3454D7C61E07F045004AF2AD /* UIButton+Orientation.mm in Sources */,
 				3404165D1E7C29AE00E2B6D6 /* PhotosInteractionAnimator.swift in Sources */,
 				340475571E081A4600C92850 /* Statistics.mm in Sources */,
@@ -6522,7 +6257,6 @@
 				F6E2FF041E097BA00083EBEC /* MWMSearchHistoryClearCell.mm in Sources */,
 				340475541E081A4600C92850 /* MWMCustomFacebookEvents.mm in Sources */,
 				340416511E7C086000E2B6D6 /* PhotoViewController.swift in Sources */,
-				3404750A1E08199E00C92850 /* MWMMyTarget.mm in Sources */,
 				3457C4271F680F1900028233 /* String+BoundingRect.swift in Sources */,
 				849CF7561DE842290024A8A5 /* MWMRoutingDisclaimerAlert.mm in Sources */,
 				849CF7581DE842290024A8A5 /* MWMDownloadTransitMapAlert.mm in Sources */,
@@ -6563,24 +6297,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		347040381EA6628300038379 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Mopub;
-			targetProxy = 347040371EA6628300038379 /* PBXContainerItemProxy */;
-		};
-		3470403B1EA6628700038379 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Mopub;
-			targetProxy = 3470403A1EA6628700038379 /* PBXContainerItemProxy */;
-		};
-		3470403D1EA6628B00038379 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Mopub;
-			targetProxy = 3470403C1EA6628B00038379 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		34F73F5F1E082FF700AC1FD6 /* InfoPlist.strings */ = {
@@ -7062,7 +6778,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party",
-					"$(PROJECT_DIR)/3party/MyTarget",
 					"$(PROJECT_DIR)/3party/Carthage/Build/iOS",
 				);
 				GCC_ENABLE_PASCAL_STRINGS = NO;
@@ -7080,10 +6795,7 @@
 					"$(PROJECT_DIR)/3party/MoPubSDK/**",
 				);
 				INFOPLIST_FILE = MAPSME.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/3party/Flurry",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-Wall",
@@ -7108,6 +6820,7 @@
 		FAAB411A149BA83500C245B1 /* Simulator */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = M4LKQN3HR8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party/MoPubSDK/AdNetworkSupport/Facebook/SDK",
@@ -7155,6 +6868,7 @@
 					"-lbsdiff",
 					"-lmwm_diff",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = mapsme.vng;
 			};
 			name = Simulator;
 		};
@@ -7170,7 +6884,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party",
-					"$(PROJECT_DIR)/3party/MyTarget",
 					"$(PROJECT_DIR)/3party/Carthage/Build/iOS",
 				);
 				GCC_ENABLE_PASCAL_STRINGS = NO;
@@ -7185,10 +6898,7 @@
 					"$(PROJECT_DIR)/3party/MoPubSDK/**",
 				);
 				INFOPLIST_FILE = MAPSME.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/3party/Flurry",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-Wall",
@@ -7213,6 +6923,7 @@
 		FAAB411C149BA84700C245B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = M4LKQN3HR8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party/MoPubSDK/AdNetworkSupport/Facebook/SDK",
@@ -7260,6 +6971,7 @@
 					"-lbsdiff",
 					"-lmwm_diff",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = mapsme.vng;
 			};
 			name = Debug;
 		};
@@ -7276,7 +6988,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party",
-					"$(PROJECT_DIR)/3party/MyTarget",
 					"$(PROJECT_DIR)/3party/Carthage/Build/iOS",
 				);
 				GCC_ENABLE_PASCAL_STRINGS = NO;
@@ -7291,10 +7002,7 @@
 					"$(PROJECT_DIR)/3party/MoPubSDK/**",
 				);
 				INFOPLIST_FILE = MAPSME.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/3party/Flurry",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -7321,6 +7029,7 @@
 		FAAB411E149BA85500C245B1 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = M4LKQN3HR8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party/MoPubSDK/AdNetworkSupport/Facebook/SDK",
@@ -7368,6 +7077,7 @@
 					"-lbsdiff",
 					"-lmwm_diff",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = mapsme.vng;
 			};
 			name = AdHoc;
 		};
@@ -7384,7 +7094,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party",
-					"$(PROJECT_DIR)/3party/MyTarget",
 					"$(PROJECT_DIR)/3party/Carthage/Build/iOS",
 				);
 				GCC_ENABLE_PASCAL_STRINGS = NO;
@@ -7399,10 +7108,7 @@
 					"$(PROJECT_DIR)/3party/MoPubSDK/**",
 				);
 				INFOPLIST_FILE = MAPSME.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/3party/Flurry",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -7429,6 +7135,7 @@
 		FAAB4120149BA86000C245B1 /* Production Full */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = M4LKQN3HR8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party/MoPubSDK/AdNetworkSupport/Facebook/SDK",
@@ -7476,6 +7183,7 @@
 					"-lbsdiff",
 					"-lmwm_diff",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = mapsme.vng;
 			};
 			name = "Production Full";
 		};
@@ -7491,7 +7199,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party",
-					"$(PROJECT_DIR)/3party/MyTarget",
 					"$(PROJECT_DIR)/3party/Carthage/Build/iOS",
 				);
 				GCC_ENABLE_PASCAL_STRINGS = NO;
@@ -7509,10 +7216,7 @@
 					"$(PROJECT_DIR)/3party/MoPubSDK/**",
 				);
 				INFOPLIST_FILE = MAPSME.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/3party/Flurry",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-Wall",
@@ -7537,6 +7241,7 @@
 		FABB561F149CD957006969C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = M4LKQN3HR8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party/MoPubSDK/AdNetworkSupport/Facebook/SDK",
@@ -7584,6 +7289,7 @@
 					"-lbsdiff",
 					"-lmwm_diff",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = mapsme.vng;
 			};
 			name = Release;
 		};
@@ -7599,7 +7305,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party",
-					"$(PROJECT_DIR)/3party/MyTarget",
 					"$(PROJECT_DIR)/3party/Carthage/Build/iOS",
 				);
 				GCC_ENABLE_PASCAL_STRINGS = NO;
@@ -7618,10 +7323,7 @@
 					"$(PROJECT_DIR)/3party/MoPubSDK/**",
 				);
 				INFOPLIST_FILE = MAPSME.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/3party/Flurry",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-Wall",
@@ -7646,6 +7348,7 @@
 		FACFE54515F8F35600CE8B20 /* Simulator Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = M4LKQN3HR8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party/MoPubSDK/AdNetworkSupport/Facebook/SDK",
@@ -7693,6 +7396,7 @@
 					"-lbsdiff",
 					"-lmwm_diff",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = mapsme.vng;
 			};
 			name = "Simulator Release";
 		};

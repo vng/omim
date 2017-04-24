@@ -58,8 +58,7 @@ enum class PreviewRows
   Schedule,
   Booking,
   Address,
-  Space,
-  Banner
+  Space
 };
 
 enum class HotelDescriptionRow
@@ -204,9 +203,6 @@ using CianIsReady = void (^)(NSArray<MWMCianItemModel *> * items);
 
 // Taxi
 - (std::vector<taxi::Provider::Type> const &)taxiProviders;
-
-// Banner
-- (id<MWMBanner>)nativeAd;
 
 // API
 - (NSString *)apiURL;

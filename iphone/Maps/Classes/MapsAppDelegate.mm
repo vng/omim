@@ -1,7 +1,7 @@
 #import "MapsAppDelegate.h"
 #import <CoreSpotlight/CoreSpotlight.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import "3party/Alohalytics/src/alohalytics_objc.h"
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import "EAGLView.h"
 #import "LocalNotificationManager.h"
 #import "MWMAuthorizationCommon.h"
@@ -18,6 +18,7 @@
 #import "MapViewController.h"
 #import "Statistics.h"
 #import "SwiftBridge.h"
+#import "3party/Alohalytics/src/alohalytics_objc.h"
 
 #include "Framework.h"
 
@@ -321,7 +322,6 @@ using namespace osm_auth_ios;
   NSTimeInterval const minimumBackgroundFetchIntervalInSeconds = 6 * 60 * 60;
   [UIApplication.sharedApplication
       setMinimumBackgroundFetchInterval:minimumBackgroundFetchIntervalInSeconds];
-  [MWMMyTarget startAdServerForbiddenCheckTimer];
   [self updateApplicationIconBadgeNumber];
 }
 
@@ -592,7 +592,6 @@ using namespace osm_auth_ios;
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
   LOG(LINFO, ("applicationDidBecomeActive - begin"));
-  NSLog(@"Pushwoosh token: %@", [MWMPushNotifications pushToken]);
   auto & f = GetFramework();
   f.EnterForeground();
   [self.mapViewController onGetFocus:YES];
@@ -1064,12 +1063,5 @@ using namespace osm_auth_ios;
 }
 
 #pragma mark - Showcase
-
-- (MWMMyTarget *)myTarget
-{
-  if (!_myTarget)
-    _myTarget = [[MWMMyTarget alloc] init];
-  return _myTarget;
-}
 
 @end

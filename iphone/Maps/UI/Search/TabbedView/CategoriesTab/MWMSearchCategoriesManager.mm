@@ -1,5 +1,4 @@
 #import "MWMSearchCategoriesManager.h"
-#import <MyTrackerSDK/MRMyTracker.h>
 #import "MWMSearchCategoryCell.h"
 #import "Statistics.h"
 #import "SwiftBridge.h"
@@ -56,7 +55,6 @@ extern NSString * const kCianCategory = @"cian";
   NSString * string = @(m_categories[indexPath.row].c_str());
   if ([string isEqualToString:kCianCategory])
   {
-    [MRMyTracker trackEventWithName:@"Search_SponsoredCategory_shown_Cian"];
     [Statistics logEvent:kStatSearchSponsoredShow withParameters:@{kStatProvider : kStatCian}];
   }
 }
@@ -73,7 +71,6 @@ extern NSString * const kCianCategory = @"cian";
   if ([string isEqualToString:kCianCategory])
   {
     delegate.state = MWMSearchManagerStateMapSearch;
-    [MRMyTracker trackEventWithName:@"Search_SponsoredCategory_selected_Cian"];
     [Statistics logEvent:kStatSearchSponsoredSelect withParameters:@{kStatProvider : kStatCian}];
   }
 }

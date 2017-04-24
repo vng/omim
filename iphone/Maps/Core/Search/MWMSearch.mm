@@ -1,6 +1,5 @@
 #import "MWMSearch.h"
 #import <Crashlytics/Crashlytics.h>
-#import "MWMBannerHelpers.h"
 #import "MWMSearchHotelsFilterViewController.h"
 #import "SwiftBridge.h"
 
@@ -39,8 +38,6 @@ using Observers = NSHashTable<Observer>;
 @property(nonatomic) BOOL viewportResultsEmpty;
 
 @property(nonatomic) MWMSearchIndex * itemsIndex;
-
-@property(nonatomic) MWMSearchBanners * banners;
 
 @property(nonatomic) NSInteger searchCount;
 
@@ -238,11 +235,6 @@ using Observers = NSHashTable<Observer>;
   return [MWMSearch manager]->m_isLocalAdsCustomer[index];
 }
 
-+ (id<MWMBanner>)adWithContainerIndex:(NSUInteger)index
-{
-  return [[MWMSearch manager].banners bannerAtIndex:index];
-}
-
 + (MWMSearchItemType)resultTypeWithRow:(NSUInteger)row
 {
   auto itemsIndex = [MWMSearch manager].itemsIndex;
@@ -318,30 +310,6 @@ using Observers = NSHashTable<Observer>;
   auto const resultsCount = self->m_everywhereResults.GetCount();
   auto const itemsIndex = [[MWMSearchIndex alloc] initWithSuggestionsCount:self.suggestionsCount
                                                               resultsCount:resultsCount];
-  if (resultsCount > 0)
-  {
-    auto const & adsEngine = GetFramework().GetAdsEngine();
-    if (![MWMSettings adForbidden] && adsEngine.HasSearchBanner())
-    {
-      self.banners = [[MWMSearchBanners alloc] initWithSearchIndex:itemsIndex];
-      __weak auto weakSelf = self;
-      [[MWMBannersCache cache]
-          getWithCoreBanners:banner_helpers::MatchPriorityBanners(adsEngine.GetSearchBanners())
-                   cacheOnly:YES
-                     loadNew:reloadBanner
-                  completion:^(id<MWMBanner> ad, BOOL isAsync) {
-                    __strong auto self = weakSelf;
-                    if (!self)
-                      return;
-                    NSAssert(isAsync == NO, @"Banner is not from cache!");
-                    [self.banners add:ad];
-                  }];
-    }
-  }
-  else
-  {
-    self.banners = nil;
-  }
   [itemsIndex build];
   self.itemsIndex = itemsIndex;
 }

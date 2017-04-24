@@ -168,9 +168,6 @@ CGFloat const kBottomOffset = 36;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  auto cell = [tableView cellForRowAtIndexPath:indexPath];
-  if ([cell isKindOfClass:[MWMAdBanner class]])
-    [static_cast<MWMAdBanner *>(cell) highlightButton];
 }
 
 #pragma mark - Properties
