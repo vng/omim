@@ -1,6 +1,5 @@
 #import "MWMSearch.h"
 #import <Crashlytics/Crashlytics.h>
-#import "MWMBannerHelpers.h"
 #import "MWMFrameworkListener.h"
 #import "MWMSearchHotelsFilterViewController.h"
 #import "MWMSearchManager+Filter.h"
@@ -73,8 +72,6 @@ booking::filter::Tasks MakeBookingFilterTasks(booking::filter::Params && availab
 @property(nonatomic) MWMSearchFilterViewController * filter;
 
 @property(nonatomic) MWMSearchIndex * itemsIndex;
-
-@property(nonatomic) MWMSearchBanners * banners;
 
 @property(nonatomic) NSInteger searchCount;
 
@@ -260,15 +257,6 @@ booking::filter::Tasks MakeBookingFilterTasks(booking::filter::Params && availab
   manager->m_everywhereParams.m_query = text;
   manager->m_viewportParams.m_query = text;
   manager.textChanged = YES;
-  auto const & adsEngine = GetFramework().GetAdsEngine();
-  auto const & purchase = GetFramework().GetPurchase();
-  bool const hasSubscription = purchase && !purchase->IsSubscriptionActive(SubscriptionType::RemoveAds);
-  
-  if (hasSubscription && ![MWMSettings adForbidden] && adsEngine.HasSearchBanner())
-  {
-    auto coreBanners = banner_helpers::MatchPriorityBanners(adsEngine.GetSearchBanners(), manager.lastQuery);
-    [[MWMBannersCache cache] refreshWithCoreBanners:coreBanners];
-  }
   [manager update];
 }
 
@@ -281,11 +269,6 @@ booking::filter::Tasks MakeBookingFilterTasks(booking::filter::Params && availab
 + (search::ProductInfo const &)productInfoWithContainerIndex:(NSUInteger)index
 {
   return [MWMSearch manager]->m_productInfo[index];
-}
-
-+ (id<MWMBanner>)adWithContainerIndex:(NSUInteger)index
-{
-  return [[MWMSearch manager].banners bannerAtIndex:index];
 }
 
 + (BOOL)isFeatureAt:(NSUInteger)index in:(std::vector<FeatureID> const &)array
@@ -408,33 +391,6 @@ booking::filter::Tasks MakeBookingFilterTasks(booking::filter::Params && availab
   auto const resultsCount = self->m_everywhereResults.GetCount();
   auto const itemsIndex = [[MWMSearchIndex alloc] initWithSuggestionsCount:self.suggestionsCount
                                                               resultsCount:resultsCount];
-  if (resultsCount > 0)
-  {
-    auto const & adsEngine = GetFramework().GetAdsEngine();
-    auto const & purchase = GetFramework().GetPurchase();
-    bool const hasSubscription = purchase && !purchase->IsSubscriptionActive(SubscriptionType::RemoveAds);
-
-    if (hasSubscription && ![MWMSettings adForbidden] && adsEngine.HasSearchBanner())
-    {
-      self.banners = [[MWMSearchBanners alloc] initWithSearchIndex:itemsIndex];
-      __weak auto weakSelf = self;
-      [[MWMBannersCache cache]
-          getWithCoreBanners:banner_helpers::MatchPriorityBanners(adsEngine.GetSearchBanners(), self.lastQuery)
-                   cacheOnly:YES
-                     loadNew:reloadBanner
-                  completion:^(id<MWMBanner> ad, BOOL isAsync) {
-                    __strong auto self = weakSelf;
-                    if (!self)
-                      return;
-                    NSAssert(isAsync == NO, @"Banner is not from cache!");
-                    [self.banners add:ad];
-                  }];
-    }
-  }
-  else
-  {
-    self.banners = nil;
-  }
   [itemsIndex build];
   self.itemsIndex = itemsIndex;
 }

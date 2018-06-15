@@ -6,13 +6,11 @@
 #import "MWMMapDownloaderAdsTableViewCell.h"
 #import "MWMMapDownloaderCellHeader.h"
 #import "MWMMapDownloaderDefaultDataSource.h"
-#import "MWMMapDownloaderExtendedDataSourceWithAds.h"
 #import "MWMMapDownloaderLargeCountryTableViewCell.h"
 #import "MWMMapDownloaderPlaceTableViewCell.h"
 #import "MWMMapDownloaderSubplaceTableViewCell.h"
 #import "MWMMapDownloaderTableViewCell.h"
 #import "MWMMigrationViewController.h"
-#import "MWMMyTarget.h"
 #import "MWMSegue.h"
 #import "MWMStorage.h"
 #import "SwiftBridge.h"
@@ -52,8 +50,7 @@ NSString * const kControllerIdentifier = @"MWMMapDownloaderViewController";
 
 using namespace storage;
 
-@interface MWMBaseMapDownloaderViewController ()<UIScrollViewDelegate, MWMFrameworkStorageObserver,
-                                                 MWMMyTargetDelegate>
+@interface MWMBaseMapDownloaderViewController ()<UIScrollViewDelegate, MWMFrameworkStorageObserver>
 
 @property (weak, nonatomic) IBOutlet UITableView * tableView;
 
@@ -90,7 +87,6 @@ using namespace storage;
   [super viewDidLoad];
   [self configNavBar];
   [self configTable];
-  [self configMyTarget];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -134,7 +130,7 @@ using namespace storage;
   }
 }
 
-- (void)configMyTarget { [MWMMyTarget manager].delegate = self; }
+- (void)configMyTarget { }
 
 - (void)notifyParentController
 {
@@ -399,7 +395,6 @@ using namespace storage;
   }
   else if ([MWMMapDownloaderAdsTableViewCell class] == cls)
   {
-    [[MWMMyTarget manager] handleBannerClickAtIndex:indexPath.row withController:self];
   }
   else
   {
@@ -409,14 +404,6 @@ using namespace storage;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  Class cls = [self.dataSource cellClassForIndexPath:indexPath];
-  if ([MWMMapDownloaderAdsTableViewCell class] == cls)
-  {
-    MWMMapDownloaderExtendedDataSourceWithAds * adDataSource =
-        static_cast<MWMMapDownloaderExtendedDataSourceWithAds *>(self.dataSource);
-    MTRGAppwallBannerAdView * adView = [adDataSource viewForBannerAtIndex:indexPath.row];
-    return [adView sizeThatFits:{CGRectGetWidth(tableView.bounds), 0}].height + 1;
-  }
   return UITableViewAutomaticDimension;
 }
 

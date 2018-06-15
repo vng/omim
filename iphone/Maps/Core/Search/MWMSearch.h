@@ -1,4 +1,3 @@
-#import "MWMBanner.h"
 #import "MWMSearchFilterViewController.h"
 #import "MWMSearchItemType.h"
 #import "MWMSearchObserver.h"
@@ -29,7 +28,6 @@ struct HotelParams;
 + (NSUInteger)containerIndexWithRow:(NSUInteger)row;
 + (search::Result const &)resultWithContainerIndex:(NSUInteger)index;
 + (search::ProductInfo const &)productInfoWithContainerIndex:(NSUInteger)index;
-+ (id<MWMBanner>)adWithContainerIndex:(NSUInteger)index;
 + (BOOL)isBookingAvailableWithContainerIndex:(NSUInteger)index;
 + (BOOL)isDealAvailableWithContainerIndex:(NSUInteger)index;
 

@@ -1,7 +1,6 @@
 #import "MWMPlacePageData.h"
 #import "AppInfo.h"
 #import "LocaleTranslator.h"
-#import "MWMBannerHelpers.h"
 #import "MWMBookmarksManager.h"
 #import "MWMNetworkPolicy.h"
 #import "MWMUGCViewModel.h"
@@ -33,7 +32,6 @@ NSString * const kUserDefaultsLatLonAsDMSKey = @"UserDefaultsLatLonAsDMS";
 @interface MWMPlacePageData ()
 
 @property(copy, nonatomic) NSString * cachedMinPrice;
-@property(nonatomic) id<MWMBanner> nativeAd;
 @property(copy, nonatomic) NSArray<MWMGalleryItemModel *> * photos;
 @property(copy, nonatomic) NSArray<MWMViatorItemModel *> * viatorItems;
 @property(nonatomic) NSNumberFormatter * currencyFormatter;
@@ -248,27 +246,6 @@ NSString * const kUserDefaultsLatLonAsDMSKey = @"UserDefaultsLatLonAsDMS";
   }
 
   m_previewRows.push_back(PreviewRows::Space);
-  NSAssert(!m_previewRows.empty(), @"Preview row's can't be empty!");
-
-  if (network_policy::CanUseNetwork() && ![MWMSettings adForbidden] && m_info.HasBanner() &&
-      ![self isViator])
-  {
-    __weak auto wSelf = self;
-    [[MWMBannersCache cache]
-        getWithCoreBanners:banner_helpers::MatchPriorityBanners(m_info.GetBanners())
-                 cacheOnly:NO
-                   loadNew:YES
-                completion:^(id<MWMBanner> ad, BOOL isAsync) {
-                  __strong auto self = wSelf;
-                  if (!self)
-                    return;
-
-                  self.nativeAd = ad;
-                  self->m_previewRows.push_back(PreviewRows::Banner);
-                  if (isAsync)
-                    self.bannerIsReadyCallback();
-                }];
-  }
 }
 
 - (void)fillMetaInfoSection
@@ -532,11 +509,6 @@ NSString * const kUserDefaultsLatLonAsDMSKey = @"UserDefaultsLatLonAsDMS";
 
 - (void)dealloc
 {
-// TODO: Submit ugc.
-//  [self.reviewViewModel submit];
-  auto nativeAd = self.nativeAd;
-  if (nativeAd)
-    [[MWMBannersCache cache] bannerIsOutOfScreenWithCoreBanner:nativeAd];
 }
 
 #pragma mark - Getters

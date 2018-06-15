@@ -6,15 +6,10 @@
 #import "FBAudienceNetwork/FBAudienceNetwork.h"
 #import "FBSDKLoginKit/FBSDKLoginKit.h"
 #import "GoogleSignIn/GIDSignIn.h"
-#import "MyTargetSDK/MyTargetSDK.h"
-#import "MyTrackerSDK/MRMyTracker.h"
 #import "UIKit/UIKit.h"
 
 #import "3party/Alohalytics/src/alohalytics_objc.h"
-#import "MPNativeAd+MWM.h"
-#import "MPNativeAd.h"
 #import "MWMTypes.h"
-#import "MoPub-Bridging-Header.h"
 #import "UIKitCategories.h"
 
 #import "private.h"
@@ -28,7 +23,6 @@
 #import "MWMAlertViewController.h"
 #import "MWMAuthorizationViewModel.h"
 #import "MWMAvailableAreaAffectDirection.h"
-#import "MWMBanner.h"
 #import "MWMBookmarksManager.h"
 #import "MWMBottomMenuViewController.h"
 #import "MWMCircularProgress+Swift.h"

@@ -114,15 +114,14 @@
 
 namespace
 {
-std::array<Class, 9> const kPreviewCells = {{[_MWMPPPTitle class],
+array<Class, 8> const kPreviewCells = {{[_MWMPPPTitle class],
                                         [_MWMPPPExternalTitle class],
                                         [_MWMPPPSubtitle class],
                                         [_MWMPPPSchedule class],
                                         [MWMPPPReview class],
                                         [MWMPPPSearchSimilarButton class],
                                         [_MWMPPPAddress class],
-                                        [_MWMPPPSpace class],
-                                        [MWMAdBanner class]}};
+                                        [_MWMPPPSpace class]}};
 }  // namespace
 
 @interface MWMPPPreviewLayoutHelper ()
@@ -131,7 +130,6 @@ std::array<Class, 9> const kPreviewCells = {{[_MWMPPPTitle class],
 @property(copy, nonatomic) NSString * speedAndAltitude;
 @property(nonatomic) MWMDirectionView * directionView;
 @property(nonatomic) NSUInteger distanceRow;
-@property(weak, nonatomic) MWMAdBanner * cachedBannerCell;
 @property(weak, nonatomic) MWMPlacePageData * data;
 @property(weak, nonatomic) NSLayoutConstraint * distanceCellTrailing;
 @property(weak, nonatomic) UIImageView * compass;
@@ -285,17 +283,6 @@ std::array<Class, 9> const kPreviewCells = {{[_MWMPPPTitle class],
     break;
   case PreviewRows::Space:
     return c;
-  case PreviewRows::Banner:
-    auto bannerCell = static_cast<MWMAdBanner *>(c);
-    [bannerCell configWithAd:data.nativeAd
-               containerType:MWMAdBannerContainerTypePlacePage
-                canRemoveAds:[SubscriptionManager canMakePayments]
-                 onRemoveAds: ^{
-      [[MapViewController sharedController] showRemoveAds];
-    }];
-
-    self.cachedBannerCell = bannerCell;
-    return bannerCell;
   }
 
   auto baseCell = static_cast<_MWMPPPCellBase *>(c);
@@ -383,9 +370,7 @@ std::array<Class, 9> const kPreviewCells = {{[_MWMPPPTitle class],
     return height;
 
   auto constexpr gapBannerHeight = 4.0;
-  CGFloat const excessHeight = self.cachedBannerCell.state == MWMAdBannerStateDetailed
-                                   ? [MWMAdBanner detailedBannerExcessHeight]
-                                   : 0;
+  CGFloat const excessHeight = 0;
 
   return height + gapBannerHeight - excessHeight;
 }
@@ -400,7 +385,6 @@ std::array<Class, 9> const kPreviewCells = {{[_MWMPPPTitle class],
       return;
 
     [self.tableView update:^{
-      self.cachedBannerCell.state = isOpen ? MWMAdBannerStateDetailed : MWMAdBannerStateCompact;
     }];
   });
 }
@@ -423,10 +407,7 @@ std::array<Class, 9> const kPreviewCells = {{[_MWMPPPTitle class],
 
 - (BOOL)lastCellIsBanner
 {
-  auto data = self.data;
-  if (!data)
-    return NO;
-  return data.previewRows.back() == place_page::PreviewRows::Banner;
+  return NO;
 }
 
 @end

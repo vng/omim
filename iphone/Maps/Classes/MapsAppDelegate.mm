@@ -22,6 +22,7 @@
 #import <CoreSpotlight/CoreSpotlight.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <UserNotifications/UserNotifications.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
 #ifdef OMIM_PRODUCTION
 
@@ -332,7 +333,6 @@ using namespace osm_auth_ios;
   NSTimeInterval const minimumBackgroundFetchIntervalInSeconds = 6 * 60 * 60;
   [UIApplication.sharedApplication
       setMinimumBackgroundFetchInterval:minimumBackgroundFetchIntervalInSeconds];
-  [MWMMyTarget startAdServerForbiddenCheckTimer];
   [self updateApplicationIconBadgeNumber];
 }
 
@@ -542,9 +542,9 @@ using namespace osm_auth_ios;
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
   LOG(LINFO, ("applicationDidBecomeActive - begin"));
-  
+
   TrackMarketingAppLaunch();
-  
+
   auto & f = GetFramework();
   f.EnterForeground();
   [self.mapViewController onGetFocus:YES];
@@ -1026,15 +1026,5 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
 }
 
 #pragma mark - Showcase
-
-- (MWMMyTarget *)myTarget
-{
-  if (![ASIdentifierManager sharedManager].advertisingTrackingEnabled)
-    return nil;
-  
-  if (!_myTarget)
-    _myTarget = [[MWMMyTarget alloc] init];
-  return _myTarget;
-}
 
 @end

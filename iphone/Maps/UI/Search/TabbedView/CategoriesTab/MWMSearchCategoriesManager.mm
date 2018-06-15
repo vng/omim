@@ -1,5 +1,4 @@
 #import "MWMSearchCategoriesManager.h"
-#import <MyTrackerSDK/MRMyTracker.h>
 #import "MWMSearchCategoryCell.h"
 #import "Statistics.h"
 #import "SwiftBridge.h"

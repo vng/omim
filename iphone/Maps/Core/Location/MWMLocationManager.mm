@@ -1,5 +1,4 @@
 #import "MWMLocationManager.h"
-#import <Pushwoosh/PushNotificationManager.h>
 #import "MWMAlertViewController.h"
 #import "MWMLocationObserver.h"
 #import "MWMLocationPredictor.h"
@@ -498,7 +497,6 @@ void setPermissionRequested()
     setPermissionRequested();
     if ([CLLocationManager headingAvailable])
       [locationManager startUpdatingHeading];
-    [[PushNotificationManager pushManager] startLocationTracking];
   };
   if ([CLLocationManager locationServicesEnabled])
   {
@@ -527,7 +525,6 @@ void setPermissionRequested()
   [locationManager stopUpdatingLocation];
   if ([CLLocationManager headingAvailable])
     [locationManager stopUpdatingHeading];
-  [[PushNotificationManager pushManager] stopLocationTracking];
 }
 
 #pragma mark - Framework

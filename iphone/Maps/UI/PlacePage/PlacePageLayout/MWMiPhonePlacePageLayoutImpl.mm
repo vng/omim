@@ -1,7 +1,6 @@
 #import "MWMiPhonePlacePageLayoutImpl.h"
 #import "MWMPPPreviewLayoutHelper.h"
 #import "MWMPlacePageLayout.h"
-#import "SwiftBridge.h"
 
 namespace
 {
@@ -286,12 +285,6 @@ CGFloat const kMinOffset = 1;
 {
   if (indexPath.section != 0)
     return;
-
-  auto cell = [tableView cellForRowAtIndexPath:indexPath];
-  if ([cell isKindOfClass:[MWMAdBanner class]])
-  {
-    return;
-  }
 
   CGFloat offset = 0;
   if (self.state == State::Top)

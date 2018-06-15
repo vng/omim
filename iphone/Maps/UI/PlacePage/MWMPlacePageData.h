@@ -63,8 +63,7 @@ enum class PreviewRows
   Review,
   SearchSimilar,
   Address,
-  Space,
-  Banner
+  Space
 };
 
 enum class HotelDescriptionRow
@@ -214,9 +213,6 @@ using NewSectionsAreReady = void (^)(NSRange const & range, MWMPlacePageData * d
 
 // Taxi
 - (std::vector<taxi::Provider::Type> const &)taxiProviders;
-
-// Banner
-- (id<MWMBanner>)nativeAd;
 
 // API
 - (NSString *)apiURL;
