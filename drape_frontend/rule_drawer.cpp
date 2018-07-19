@@ -439,13 +439,13 @@ void RuleDrawer::ProcessPointStyle(FeatureType & f, Stylist const & s,
     return;
 
   int const zoomLevel = m_context->GetTileKey().m_zoomLevel;
-  bool const isSpeedCamera = ftypes::IsSpeedCamChecker::Instance()(f);
-  if (isSpeedCamera && !GetStyleReader().IsCarNavigationStyle())
-    return;
+//  bool const isSpeedCamera = ftypes::IsSpeedCamChecker::Instance()(f);
+//  if (isSpeedCamera && !GetStyleReader().IsCarNavigationStyle())
+//    return;
 
   DepthLayer depthLayer = DepthLayer::OverlayLayer;
-  if (isSpeedCamera)
-    depthLayer = DepthLayer::NavigationLayer;
+//  if (isSpeedCamera)
+//    depthLayer = DepthLayer::NavigationLayer;
 
   minVisibleScale = feature::GetMinDrawableScale(f);
   ApplyPointFeature apply(m_context->GetTileKey(), insertShape, f.GetID(), minVisibleScale, f.GetRank(),
