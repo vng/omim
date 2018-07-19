@@ -320,7 +320,18 @@ CaptionDescription & Stylist::GetCaptionDescriptionImpl()
 
 bool InitStylist(FeatureType & f, int8_t deviceLang, int const zoomLevel, bool buildings3d, Stylist & s)
 {
-  feature::TypesHolder const types(f);
+  feature::TypesHolder types(f);
+
+  {
+    // Remove booking type.
+    static uint32_t const booking = classif().GetTypeByPath({"sponsored", "booking"});
+    if (types.RemoveIf([](uint32_t t) { return t == booking; }))
+    {
+      // If booking exists, remove private flat-apartments types.
+      static uint32_t const apt = classif().GetTypeByPath({"tourism", "apartment"});
+      (void)types.RemoveIf([](uint32_t t) { return t == apt; });
+    }
+  }
 
   if (!buildings3d && ftypes::IsBuildingPartChecker::Instance()(types) &&
       !ftypes::IsBuildingChecker::Instance()(types))
