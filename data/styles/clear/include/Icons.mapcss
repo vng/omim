@@ -320,6 +320,10 @@ node[amenity=biergarten],
 area[amenity=biergarten]
 {z-index: 2782;}
 
+/* VNG additional */
+node[highway=speed_camera]
+{z-index: 3000;}
+
 node[railway=halt],
 node[railway=station],
 area[building=train_station],
@@ -1561,8 +1565,11 @@ node|z18-[amenity=pub],
 area|z18-[amenity=pub],
 node|z18-[amenity=biergarten],
 area|z18-[amenity=biergarten]
-{ text-optional: true;}
+{text-optional: true;}
 
+/* VNG additional */
+node|z15-[highway=speed_camera]
+{icon-image: speedcam-m.svg;}
 
 /* 5.AMENITY (infrastructure) */
 
