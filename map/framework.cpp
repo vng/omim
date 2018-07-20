@@ -3484,7 +3484,7 @@ void Framework::ShowViewportSearchResults(search::Results::ConstIter begin,
       if (!id.IsValid())
         return;
 
-      for (auto const filterResult : filtersResults)
+      for (auto const & filterResult : filtersResults)
       {
         auto const found = std::binary_search(filterResult.m_featuresSorted.cbegin(),
                                               filterResult.m_featuresSorted.cend(), id);

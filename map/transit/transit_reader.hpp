@@ -62,7 +62,7 @@ private:
           it->second = item;
       }
     }
-  };
+  }
 
   DataSource & m_dataSource;
   TReadFeaturesFn m_readFeaturesFn;
