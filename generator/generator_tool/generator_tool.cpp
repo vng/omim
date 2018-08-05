@@ -458,7 +458,7 @@ int main(int argc, char ** argv)
 
       /// @todo Make threads count according to environment (single mwm build or planet build).
       if (!indexer::BuildSearchIndexFromDataFile(datFile, true /* forceRebuild */,
-                                                 1 /* threadsCount */))
+                                                 8 /* threadsCount */))
         LOG(LCRITICAL, ("Error generating search index."));
 
       LOG(LINFO, ("Generating rank table for", datFile));
