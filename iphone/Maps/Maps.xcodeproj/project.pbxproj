@@ -365,8 +365,6 @@
 		472E3F4C2147D5700020E412 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E3F4B2147D5700020E412 /* Subscription.swift */; };
 		473464A7218B0BC000D6AF5B /* MWMPurchaseValidation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 473464A6218B0BC000D6AF5B /* MWMPurchaseValidation.mm */; };
 		473CBF9B2164DD470059BD54 /* SettingsTableViewSelectableProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473CBF9A2164DD470059BD54 /* SettingsTableViewSelectableProgressCell.swift */; };
-		474AC76C2139E4F2002F9BF9 /* RemoveAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AC76A2139E4F2002F9BF9 /* RemoveAdsViewController.swift */; };
-		474AC76D2139E4F2002F9BF9 /* RemoveAdsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474AC76B2139E4F2002F9BF9 /* RemoveAdsViewController.xib */; };
 		474C9F5A213FF75800369009 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474C9F59213FF75800369009 /* StoreKit.framework */; };
 		474C9F632141896800369009 /* MWMEye.mm in Sources */ = {isa = PBXBuildFile; fileRef = 474C9F622141896800369009 /* MWMEye.mm */; };
 		4767CD9F20AAD48A00BD8166 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767CD9E20AAD48A00BD8166 /* Checkmark.swift */; };
@@ -1346,8 +1344,6 @@
 		473464A5218B0BC000D6AF5B /* MWMPurchaseValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMPurchaseValidation.h; sourceTree = "<group>"; };
 		473464A6218B0BC000D6AF5B /* MWMPurchaseValidation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMPurchaseValidation.mm; sourceTree = "<group>"; };
 		473CBF9A2164DD470059BD54 /* SettingsTableViewSelectableProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewSelectableProgressCell.swift; sourceTree = "<group>"; };
-		474AC76A2139E4F2002F9BF9 /* RemoveAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAdsViewController.swift; sourceTree = "<group>"; };
-		474AC76B2139E4F2002F9BF9 /* RemoveAdsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoveAdsViewController.xib; sourceTree = "<group>"; };
 		474C9F59213FF75800369009 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		474C9F612141896800369009 /* MWMEye.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMEye.h; sourceTree = "<group>"; };
 		474C9F622141896800369009 /* MWMEye.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMEye.mm; sourceTree = "<group>"; };
@@ -4432,7 +4428,6 @@
 				34D3B02D1E389D05004100F9 /* MWMEditorAdditionalNameTableViewCell.xib in Resources */,
 				34D3B0331E389D05004100F9 /* MWMEditorCategoryCell.xib in Resources */,
 				F6E2FDCB1E097BA00083EBEC /* MWMEditorNotesFooter.xib in Resources */,
-				474AC76D2139E4F2002F9BF9 /* RemoveAdsViewController.xib in Resources */,
 				34D3B0391E389D05004100F9 /* MWMEditorSelectTableViewCell.xib in Resources */,
 				34AB663B1FC5AA330078E451 /* RouteManagerViewController.xib in Resources */,
 				34D3B03F1E389D05004100F9 /* MWMEditorSwitchTableViewCell.xib in Resources */,

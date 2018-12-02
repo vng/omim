@@ -57,18 +57,12 @@ NSString * const kPushDeviceTokenLogEvent = @"iOSPushDeviceToken";
        willPresentNotification:(UNNotification *)notification
          withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler
 {
-  [[PushNotificationManager pushManager].notificationCenterDelegate userNotificationCenter:center
-                                                                   willPresentNotification:notification
-                                                                     withCompletionHandler:completionHandler];
 }
 
 + (void)userNotificationCenter:(UNUserNotificationCenter *)center
 didReceiveNotificationResponse:(UNNotificationResponse *)response
          withCompletionHandler:(void(^)(void))completionHandler
 {
-  [[PushNotificationManager pushManager].notificationCenterDelegate userNotificationCenter:center
-                                                            didReceiveNotificationResponse:response
-                                                                     withCompletionHandler:completionHandler];
 }
 
 @end

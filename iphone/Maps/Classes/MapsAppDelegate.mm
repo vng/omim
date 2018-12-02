@@ -400,9 +400,6 @@ using namespace osm_auth_ios;
     }];
   }
 
-  if ([MoPubKit shouldShowConsentDialog])
-    [MoPubKit grantConsent];
-  
   return YES;
 }
 

@@ -114,14 +114,14 @@
 
 namespace
 {
-array<Class, 8> const kPreviewCells = {{[_MWMPPPTitle class],
-                                        [_MWMPPPExternalTitle class],
-                                        [_MWMPPPSubtitle class],
-                                        [_MWMPPPSchedule class],
-                                        [MWMPPPReview class],
-                                        [MWMPPPSearchSimilarButton class],
-                                        [_MWMPPPAddress class],
-                                        [_MWMPPPSpace class]}};
+std::array<Class, 8> const kPreviewCells = {{[_MWMPPPTitle class],
+                                              [_MWMPPPExternalTitle class],
+                                              [_MWMPPPSubtitle class],
+                                              [_MWMPPPSchedule class],
+                                              [MWMPPPReview class],
+                                              [MWMPPPSearchSimilarButton class],
+                                              [_MWMPPPAddress class],
+                                              [_MWMPPPSpace class]}};
 }  // namespace
 
 @interface MWMPPPreviewLayoutHelper ()
