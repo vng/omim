@@ -39,8 +39,6 @@
 		3404165C1E7C29AE00E2B6D6 /* PhotosInteractionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404165A1E7C29AE00E2B6D6 /* PhotosInteractionAnimator.swift */; };
 		340474F11E08199D00C92850 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474DC1E08199D00C92850 /* Crashlytics.framework */; };
 		340474F41E08199D00C92850 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474DD1E08199D00C92850 /* Fabric.framework */; };
-		340475091E08199E00C92850 /* MWMMyTarget.mm in Sources */ = {isa = PBXBuildFile; fileRef = 340474EB1E08199D00C92850 /* MWMMyTarget.mm */; };
-		3404750F1E08199E00C92850 /* MyTrackerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340474EE1E08199D00C92850 /* MyTrackerSDK.framework */; };
 		3404754D1E081A4600C92850 /* MWMKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 340475191E081A4600C92850 /* MWMKeyboard.m */; };
 		340475501E081A4600C92850 /* fabric_logging_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 340475201E081A4600C92850 /* fabric_logging_ios.mm */; };
 		340475531E081A4600C92850 /* MWMCustomFacebookEvents.mm in Sources */ = {isa = PBXBuildFile; fileRef = 340475221E081A4600C92850 /* MWMCustomFacebookEvents.mm */; };
@@ -148,7 +146,6 @@
 		3486B5081E27A4B50069C126 /* LocalNotificationManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3486B5061E27A4B50069C126 /* LocalNotificationManager.mm */; };
 		3486B50D1E27A6DA0069C126 /* MWMPushNotifications.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3486B50B1E27A6DA0069C126 /* MWMPushNotifications.mm */; };
 		3486B5191E27AD3B0069C126 /* MWMFrameworkListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3486B5131E27AD3B0069C126 /* MWMFrameworkListener.mm */; };
-		3488B0131E9D0AEC0068AFD8 /* AdBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488B0101E9D0AEC0068AFD8 /* AdBannerCell.swift */; };
 		3488B01A1E9D0B230068AFD8 /* UIColor+Modifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488B0181E9D0B230068AFD8 /* UIColor+Modifications.swift */; };
 		3488B03B1E9D13EF0068AFD8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3488B03A1E9D13EF0068AFD8 /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		348A8DF51F66775A00D83026 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A8DF11F66775A00D83026 /* RatingView.swift */; };
@@ -158,7 +155,6 @@
 		3490D2DF1CE9DD2500D0B838 /* MWMSideButtons.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3490D2DA1CE9DD2500D0B838 /* MWMSideButtons.mm */; };
 		3490D2E11CE9DD2500D0B838 /* MWMSideButtonsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3490D2DC1CE9DD2500D0B838 /* MWMSideButtonsView.mm */; };
 		3490D2E31CE9DD2500D0B838 /* MWMSideButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3490D2DD1CE9DD2500D0B838 /* MWMSideButtonsView.xib */; };
-		34926BE71EA4C2A700DCF14C /* SearchBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34926BE51EA4C2A700DCF14C /* SearchBanners.swift */; };
 		34943BBB1E2626B200B14F84 /* WelcomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34943BB91E2626B200B14F84 /* WelcomePageController.swift */; };
 		349A13831DEC138C00C7DB60 /* MWMMobileInternetAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 349A13801DEC138C00C7DB60 /* MWMMobileInternetAlert.m */; };
 		349A13851DEC138C00C7DB60 /* MWMMobileInternetAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349A13811DEC138C00C7DB60 /* MWMMobileInternetAlert.xib */; };
@@ -271,13 +267,6 @@
 		34E7761F1F14DB48003040B3 /* PlacePageArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E7761D1F14DB48003040B3 /* PlacePageArea.swift */; };
 		34E776331F15FAC2003040B3 /* MWMPlacePageManagerHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34E776311F15FAC2003040B3 /* MWMPlacePageManagerHelper.mm */; };
 		34EF94291C05A6F30050B714 /* MWMSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = F607C18D1C047FDC00B53A87 /* MWMSegue.m */; };
-		34F4072C1E9E1AFF00E57AC0 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071D1E9E1AFF00E57AC0 /* Banner.swift */; };
-		34F4072F1E9E1AFF00E57AC0 /* BannersCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071E1E9E1AFF00E57AC0 /* BannersCache.swift */; };
-		34F407321E9E1AFF00E57AC0 /* BannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4071F1E9E1AFF00E57AC0 /* BannerType.swift */; };
-		34F407381E9E1AFF00E57AC0 /* FacebookBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407221E9E1AFF00E57AC0 /* FacebookBanner.swift */; };
-		34F4073B1E9E1AFF00E57AC0 /* MopubBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F407241E9E1AFF00E57AC0 /* MopubBanner.swift */; };
-		34F4073E1E9E1AFF00E57AC0 /* MPNativeAd+MWM.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F407261E9E1AFF00E57AC0 /* MPNativeAd+MWM.m */; };
-		34F407411E9E1AFF00E57AC0 /* RBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4072A1E9E1AFF00E57AC0 /* RBBanner.swift */; };
 		34F5E0D41E3F254800B1C415 /* UIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F5E0D21E3F254800B1C415 /* UIView+Hierarchy.swift */; };
 		34F73F9C1E082FF800AC1FD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34F73F5F1E082FF700AC1FD6 /* InfoPlist.strings */; };
 		34F73F9F1E082FF800AC1FD6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34F73F611E082FF800AC1FD6 /* Localizable.strings */; };
@@ -343,14 +332,10 @@
 		472E3F4C2147D5700020E412 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E3F4B2147D5700020E412 /* Subscription.swift */; };
 		473464A7218B0BC000D6AF5B /* MWMPurchaseValidation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 473464A6218B0BC000D6AF5B /* MWMPurchaseValidation.mm */; };
 		4735008A23A83CF700661A95 /* DownloadedMapsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735008923A83CF700661A95 /* DownloadedMapsDataSource.swift */; };
-		4738A8E7239FC513007C0F43 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4738A8E6239FC513007C0F43 /* AdBannerView.swift */; };
-		4738A8E9239FC526007C0F43 /* AdBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4738A8E8239FC526007C0F43 /* AdBannerView.xib */; };
 		473CBF9B2164DD470059BD54 /* SettingsTableViewSelectableProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473CBF9A2164DD470059BD54 /* SettingsTableViewSelectableProgressCell.swift */; };
 		4740184323F5BDE800A93C81 /* minizip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4740184123F5BDD300A93C81 /* minizip.framework */; };
 		4740184423F5BDE900A93C81 /* minizip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4740184123F5BDD300A93C81 /* minizip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4747045424622EF0006E51E9 /* GuidesGalleryStyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747045324622EF0006E51E9 /* GuidesGalleryStyleSheet.swift */; };
-		474AC76C2139E4F2002F9BF9 /* RemoveAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AC76A2139E4F2002F9BF9 /* RemoveAdsViewController.swift */; };
-		474AC76D2139E4F2002F9BF9 /* RemoveAdsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474AC76B2139E4F2002F9BF9 /* RemoveAdsViewController.xib */; };
 		474C9F5A213FF75800369009 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474C9F59213FF75800369009 /* StoreKit.framework */; };
 		475EC36D244EDE66003BC295 /* GuidesGalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475EC36C244EDE66003BC295 /* GuidesGalleryPresenter.swift */; };
 		475EC36F244EF7A9003BC295 /* GuidesGalleryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475EC36E244EF7A9003BC295 /* GuidesGalleryBuilder.swift */; };
@@ -787,7 +772,6 @@
 		F6664BFA1E6459CB00E703C2 /* FacilityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6664BF71E6459CB00E703C2 /* FacilityCell.swift */; };
 		F6664BFD1E6459CB00E703C2 /* FacilityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6664BF81E6459CB00E703C2 /* FacilityCell.xib */; };
 		F6791B141C43DF0B007A8A6E /* MWMStartButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6791B121C43DEA7007A8A6E /* MWMStartButton.m */; };
-		F68BDF061EEA9A830009BB81 /* MyTargetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68BDF041EEA9A830009BB81 /* MyTargetSDK.framework */; };
 		F69018BD1E9F7CB600B3C10B /* MWMAutoupdateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69018BB1E9F7CB600B3C10B /* MWMAutoupdateController.xib */; };
 		F692F3831EA0FAF5001E82EB /* MWMAutoupdateController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F69018B71E9E601400B3C10B /* MWMAutoupdateController.mm */; };
 		F69739B21FD197DB00FDA07D /* MWMDiscoveryTableManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F69739B01FD197DB00FDA07D /* MWMDiscoveryTableManager.mm */; };
@@ -961,10 +945,6 @@
 		3404165A1E7C29AE00E2B6D6 /* PhotosInteractionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosInteractionAnimator.swift; sourceTree = "<group>"; };
 		340474DC1E08199D00C92850 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		340474DD1E08199D00C92850 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		340474EA1E08199D00C92850 /* MWMMyTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMMyTarget.h; sourceTree = "<group>"; };
-		340474EB1E08199D00C92850 /* MWMMyTarget.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMMyTarget.mm; sourceTree = "<group>"; };
-		340474EC1E08199D00C92850 /* MWMMyTargetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMMyTargetDelegate.h; sourceTree = "<group>"; };
-		340474EE1E08199D00C92850 /* MyTrackerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyTrackerSDK.framework; sourceTree = "<group>"; };
 		340475181E081A4600C92850 /* MWMKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMKeyboard.h; sourceTree = "<group>"; };
 		340475191E081A4600C92850 /* MWMKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWMKeyboard.m; sourceTree = "<group>"; };
 		3404751A1E081A4600C92850 /* MWMKeyboardObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMKeyboardObserver.h; sourceTree = "<group>"; };
@@ -1135,7 +1115,6 @@
 		3486B5121E27AD3B0069C126 /* MWMFrameworkListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMFrameworkListener.h; sourceTree = "<group>"; };
 		3486B5131E27AD3B0069C126 /* MWMFrameworkListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMFrameworkListener.mm; sourceTree = "<group>"; };
 		3486B5141E27AD3B0069C126 /* MWMFrameworkObservers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMFrameworkObservers.h; sourceTree = "<group>"; };
-		3488B0101E9D0AEC0068AFD8 /* AdBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdBannerCell.swift; sourceTree = "<group>"; };
 		3488B0181E9D0B230068AFD8 /* UIColor+Modifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Modifications.swift"; sourceTree = "<group>"; };
 		3488B03A1E9D13EF0068AFD8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		348A8DF11F66775A00D83026 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
@@ -1147,7 +1126,6 @@
 		3490D2DB1CE9DD2500D0B838 /* MWMSideButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMSideButtonsView.h; sourceTree = "<group>"; };
 		3490D2DC1CE9DD2500D0B838 /* MWMSideButtonsView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMSideButtonsView.mm; sourceTree = "<group>"; };
 		3490D2DD1CE9DD2500D0B838 /* MWMSideButtonsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MWMSideButtonsView.xib; sourceTree = "<group>"; };
-		34926BE51EA4C2A700DCF14C /* SearchBanners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBanners.swift; sourceTree = "<group>"; };
 		34943BB91E2626B200B14F84 /* WelcomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePageController.swift; sourceTree = "<group>"; };
 		3495433C1EB22D9600F08F73 /* MPAdBrowserController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MPAdBrowserController.xib; path = 3party/MoPubSDK/Internal/Common/MPAdBrowserController.xib; sourceTree = "<group>"; };
 		349A137F1DEC138C00C7DB60 /* MWMMobileInternetAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMMobileInternetAlert.h; sourceTree = "<group>"; };
@@ -1311,15 +1289,6 @@
 		34E7761D1F14DB48003040B3 /* PlacePageArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePageArea.swift; sourceTree = "<group>"; };
 		34E776301F15FAC2003040B3 /* MWMPlacePageManagerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMPlacePageManagerHelper.h; sourceTree = "<group>"; };
 		34E776311F15FAC2003040B3 /* MWMPlacePageManagerHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMPlacePageManagerHelper.mm; sourceTree = "<group>"; };
-		34F4071D1E9E1AFF00E57AC0 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
-		34F4071E1E9E1AFF00E57AC0 /* BannersCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannersCache.swift; sourceTree = "<group>"; };
-		34F4071F1E9E1AFF00E57AC0 /* BannerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerType.swift; sourceTree = "<group>"; };
-		34F407221E9E1AFF00E57AC0 /* FacebookBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookBanner.swift; sourceTree = "<group>"; };
-		34F407241E9E1AFF00E57AC0 /* MopubBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MopubBanner.swift; sourceTree = "<group>"; };
-		34F407251E9E1AFF00E57AC0 /* MPNativeAd+MWM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPNativeAd+MWM.h"; sourceTree = "<group>"; };
-		34F407261E9E1AFF00E57AC0 /* MPNativeAd+MWM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPNativeAd+MWM.m"; sourceTree = "<group>"; };
-		34F407281E9E1AFF00E57AC0 /* MWMBannerHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMBannerHelpers.h; sourceTree = "<group>"; };
-		34F4072A1E9E1AFF00E57AC0 /* RBBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBBanner.swift; sourceTree = "<group>"; };
 		34F5E0D21E3F254800B1C415 /* UIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		34F5E0DA1E3F3ED300B1C415 /* MWMRoutePoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMRoutePoint.h; sourceTree = "<group>"; };
 		34F5E0DC1E3F51AF00B1C415 /* MWMCoreRouterType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMCoreRouterType.h; sourceTree = "<group>"; };
@@ -1463,8 +1432,6 @@
 		4735008923A83CF700661A95 /* DownloadedMapsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedMapsDataSource.swift; sourceTree = "<group>"; };
 		473500C023A8F81800661A95 /* MWMFrameworkObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMFrameworkObserver.h; sourceTree = "<group>"; };
 		47375E562420ECA800FFCC49 /* Chart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Chart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4738A8E6239FC513007C0F43 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
-		4738A8E8239FC526007C0F43 /* AdBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdBannerView.xib; sourceTree = "<group>"; };
 		473CBF9A2164DD470059BD54 /* SettingsTableViewSelectableProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewSelectableProgressCell.swift; sourceTree = "<group>"; };
 		4740184123F5BDD300A93C81 /* minizip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = minizip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4747045324622EF0006E51E9 /* GuidesGalleryStyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesGalleryStyleSheet.swift; sourceTree = "<group>"; };
@@ -1493,7 +1460,6 @@
 		478F6FA723C5067C00054A53 /* MyReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviewView.swift; sourceTree = "<group>"; };
 		479603722446F17C00F3BDD0 /* User+AppleId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+AppleId.swift"; sourceTree = "<group>"; };
 		4796037424482E3800F3BDD0 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
-		479D305522C627CB00D18278 /* PartnerBannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnerBannerViewController.xib; sourceTree = "<group>"; };
 		479D305922C62F4000D18278 /* MWMBookmarksBannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MWMBookmarksBannerViewController.xib; sourceTree = "<group>"; };
 		479D306322C664CE00D18278 /* MWMDownloadBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWMDownloadBannerViewController.h; sourceTree = "<group>"; };
 		479D306422C664CE00D18278 /* MWMDownloadBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWMDownloadBannerViewController.m; sourceTree = "<group>"; };
@@ -1600,7 +1566,6 @@
 		6741AAAF1BF356B9002C974C /* libjansson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjansson.a; path = "../../../omim-xcode-build/Debug/libjansson.a"; sourceTree = "<group>"; };
 		6741AAB11BF356B9002C974C /* libmap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmap.a; path = "../../../omim-xcode-build/Debug/libmap.a"; sourceTree = "<group>"; };
 		6741AAB31BF356B9002C974C /* libopening_hours.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopening_hours.a; path = "../../../omim-xcode-build/Debug/libopening_hours.a"; sourceTree = "<group>"; };
-		6741AAB41BF356B9002C974C /* libosrm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosrm.a; path = "../../../omim-xcode-build/Debug/libosrm.a"; sourceTree = "<group>"; };
 		6741AAB51BF356B9002C974C /* libplatform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libplatform.a; path = "../../../omim-xcode-build/Debug/libplatform.a"; sourceTree = "<group>"; };
 		6741AAB61BF356BA002C974C /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = "../../../omim-xcode-build/Debug/libprotobuf.a"; sourceTree = "<group>"; };
 		6741AAB81BF356BA002C974C /* librouting.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librouting.a; path = "../../../omim-xcode-build/Debug/librouting.a"; sourceTree = "<group>"; };
@@ -1822,6 +1787,10 @@
 		A630D204207CAA3400976DEA /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = vi; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A630D205207CAA3A00976DEA /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
 		A630D206207CAA5800976DEA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		AC79F11E1E534D0B00B7D954 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AC79F1201E534D4000B7D954 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AC79F1221E534DFA00B7D954 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AC79F1241E534E1700B7D954 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B32FE73E20D2844600EF7446 /* DownloadedBookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedBookmarksViewController.swift; sourceTree = "<group>"; };
 		B32FE73F20D2844600EF7446 /* DownloadedBookmarksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadedBookmarksViewController.xib; sourceTree = "<group>"; };
 		B32FE74220D2B09600EF7446 /* CatalogWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogWebViewController.swift; sourceTree = "<group>"; };
@@ -1972,7 +1941,6 @@
 		F6664BF81E6459CB00E703C2 /* FacilityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacilityCell.xib; sourceTree = "<group>"; };
 		F6791B111C43DEA7007A8A6E /* MWMStartButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMStartButton.h; sourceTree = "<group>"; };
 		F6791B121C43DEA7007A8A6E /* MWMStartButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWMStartButton.m; sourceTree = "<group>"; };
-		F68BDF041EEA9A830009BB81 /* MyTargetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyTargetSDK.framework; sourceTree = "<group>"; };
 		F69018B61E9E601400B3C10B /* MWMAutoupdateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMAutoupdateController.h; sourceTree = "<group>"; };
 		F69018B71E9E601400B3C10B /* MWMAutoupdateController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMAutoupdateController.mm; sourceTree = "<group>"; };
 		F69018BB1E9F7CB600B3C10B /* MWMAutoupdateController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MWMAutoupdateController.xib; sourceTree = "<group>"; };
@@ -2205,7 +2173,6 @@
 				45FFD65D1E965EBE00DB854E /* liblocal_ads.a in Frameworks */,
 				34D1B6F11E95096B0057E9C7 /* libicu.a in Frameworks */,
 				671E78D31E6A423300B2859B /* librouting_common.a in Frameworks */,
-				474C9F5A213FF75800369009 /* StoreKit.framework in Frameworks */,
 				67B78B551E42333C0018E590 /* AdSupport.framework in Frameworks */,
 				67B78B471E422E0A0018E590 /* MobileCoreServices.framework in Frameworks */,
 				67B78B451E422C970018E590 /* iAd.framework in Frameworks */,
@@ -2223,7 +2190,6 @@
 				6741AABD1BF356BA002C974C /* libagg.a in Frameworks */,
 				6741AABE1BF356BA002C974C /* libalohalitics.a in Frameworks */,
 				6741AAC11BF356BA002C974C /* libbase.a in Frameworks */,
-				F68BDF061EEA9A830009BB81 /* MyTargetSDK.framework in Frameworks */,
 				6741AAC21BF356BA002C974C /* libcoding.a in Frameworks */,
 				6741AAC31BF356BA002C974C /* libexpat.a in Frameworks */,
 				6741AAC41BF356BA002C974C /* libfreetype.a in Frameworks */,
@@ -2238,7 +2204,6 @@
 				6741AACE1BF356BA002C974C /* libopening_hours.a in Frameworks */,
 				347A4C5E1C4E76C9006BA66E /* liboauthcpp.a in Frameworks */,
 				6741AAD01BF356BA002C974C /* libplatform.a in Frameworks */,
-				3404750F1E08199E00C92850 /* MyTrackerSDK.framework in Frameworks */,
 				6741AAD11BF356BA002C974C /* libprotobuf.a in Frameworks */,
 				6741AAD31BF356BA002C974C /* librouting.a in Frameworks */,
 				674A7E281C0DA573003D48E1 /* libstb_image.a in Frameworks */,
@@ -2372,7 +2337,6 @@
 				4577B28021F2066A00864FAC /* libvulkan_wrapper.a */,
 				CDB4D4D4222D118E00104869 /* CarPlay.framework */,
 				BB2C99AF21B6AB4500F7371C /* libdescriptions.a */,
-				474C9F59213FF75800369009 /* StoreKit.framework */,
 				3D1958EA213804B6009A83EC /* libmetrics.a */,
 				4598438521394CFD00F8CAB2 /* MetalPerformanceShaders.framework */,
 				BB8123CD212C264700ADE512 /* Metal.framework */,
@@ -2385,6 +2349,10 @@
 				4586D0E61F4813AB00DF9CE5 /* libmwm_diff.a */,
 				4586D0C31F48121A00DF9CE5 /* libbsdiff.a */,
 				F6F8E3C41EF8469700F2DE8F /* libugc.a */,
+				AC79F1241E534E1700B7D954 /* AudioToolbox.framework */,
+				AC79F1221E534DFA00B7D954 /* SystemConfiguration.framework */,
+				AC79F1201E534D4000B7D954 /* CoreTelephony.framework */,
+				AC79F11E1E534D0B00B7D954 /* AVFoundation.framework */,
 				340474DB1E08199D00C92850 /* 3party */,
 				6741AAA21BF356B9002C974C /* libagg.a */,
 				6741AAA31BF356B9002C974C /* libalohalitics.a */,
@@ -2403,7 +2371,6 @@
 				6741AAB11BF356B9002C974C /* libmap.a */,
 				340DC82B1C4E72C700EAA2CC /* liboauthcpp.a */,
 				6741AAB31BF356B9002C974C /* libopening_hours.a */,
-				6741AAB41BF356B9002C974C /* libosrm.a */,
 				3DDB4BC31DAB98F000F4D021 /* libpartners_api.a */,
 				6741AAB51BF356B9002C974C /* libplatform.a */,
 				6741AAB61BF356BA002C974C /* libprotobuf.a */,
@@ -2483,21 +2450,8 @@
 				340474DD1E08199D00C92850 /* Fabric.framework */,
 				347D15C71F82362900E86251 /* GoogleSignIn.framework */,
 				347D15C81F82362900E86251 /* GoogleSignInDependencies.framework */,
-				340474E91E08199D00C92850 /* MyTarget */,
-				340474EE1E08199D00C92850 /* MyTrackerSDK.framework */,
 			);
 			path = 3party;
-			sourceTree = "<group>";
-		};
-		340474E91E08199D00C92850 /* MyTarget */ = {
-			isa = PBXGroup;
-			children = (
-				340474EA1E08199D00C92850 /* MWMMyTarget.h */,
-				340474EB1E08199D00C92850 /* MWMMyTarget.mm */,
-				340474EC1E08199D00C92850 /* MWMMyTargetDelegate.h */,
-				F68BDF041EEA9A830009BB81 /* MyTargetSDK.framework */,
-			);
-			path = MyTarget;
 			sourceTree = "<group>";
 		};
 		340475141E081A4600C92850 /* Common */ = {
@@ -2551,7 +2505,6 @@
 				472E3F4221468AF40020E412 /* Subscriptions */,
 				3472B5DD200F868E00DC6CD5 /* Editor */,
 				3472B5C8200F436700DC6CD5 /* BackgroundFetchScheduler */,
-				34F4071C1E9E1AFF00E57AC0 /* Ads */,
 				347039A51FB9A5B400E47496 /* Bookmarks */,
 				3486B50F1E27AD3B0069C126 /* Framework */,
 				340475291E081A4600C92850 /* Location */,
@@ -2621,7 +2574,6 @@
 				3404753E1E081A4600C92850 /* MWMSearchObserver.h */,
 				3430643F1E9FDC7300DC7665 /* SearchIndex.swift */,
 				342639461EA0FDB30025EB89 /* MWMSearchItemType.h */,
-				34926BE51EA4C2A700DCF14C /* SearchBanners.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -2689,18 +2641,6 @@
 				340E1EEA1E2F614400CE49BF /* Welcome.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		3432E17F1E49BEFA008477E9 /* Ads */ = {
-			isa = PBXGroup;
-			children = (
-				474AC76A2139E4F2002F9BF9 /* RemoveAdsViewController.swift */,
-				474AC76B2139E4F2002F9BF9 /* RemoveAdsViewController.xib */,
-				3488B0101E9D0AEC0068AFD8 /* AdBannerCell.swift */,
-				4738A8E6239FC513007C0F43 /* AdBannerView.swift */,
-				4738A8E8239FC526007C0F43 /* AdBannerView.xib */,
-			);
-			path = Ads;
 			sourceTree = "<group>";
 		};
 		343D7B6B202AF283007D56A8 /* Permissions */ = {
@@ -3328,46 +3268,6 @@
 				9989272F2449DE1500260CE2 /* TabBarArea.swift */,
 			);
 			path = AvailableArea;
-			sourceTree = "<group>";
-		};
-		34F4071C1E9E1AFF00E57AC0 /* Ads */ = {
-			isa = PBXGroup;
-			children = (
-				34F4071D1E9E1AFF00E57AC0 /* Banner.swift */,
-				34F4071E1E9E1AFF00E57AC0 /* BannersCache.swift */,
-				34F4071F1E9E1AFF00E57AC0 /* BannerType.swift */,
-				34F407211E9E1AFF00E57AC0 /* Facebook */,
-				34F407231E9E1AFF00E57AC0 /* Mopub */,
-				34F407281E9E1AFF00E57AC0 /* MWMBannerHelpers.h */,
-				34F407291E9E1AFF00E57AC0 /* RB */,
-			);
-			path = Ads;
-			sourceTree = "<group>";
-		};
-		34F407211E9E1AFF00E57AC0 /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				34F407221E9E1AFF00E57AC0 /* FacebookBanner.swift */,
-			);
-			path = Facebook;
-			sourceTree = "<group>";
-		};
-		34F407231E9E1AFF00E57AC0 /* Mopub */ = {
-			isa = PBXGroup;
-			children = (
-				34F407241E9E1AFF00E57AC0 /* MopubBanner.swift */,
-				34F407251E9E1AFF00E57AC0 /* MPNativeAd+MWM.h */,
-				34F407261E9E1AFF00E57AC0 /* MPNativeAd+MWM.m */,
-			);
-			path = Mopub;
-			sourceTree = "<group>";
-		};
-		34F407291E9E1AFF00E57AC0 /* RB */ = {
-			isa = PBXGroup;
-			children = (
-				34F4072A1E9E1AFF00E57AC0 /* RBBanner.swift */,
-			);
-			path = RB;
 			sourceTree = "<group>";
 		};
 		34F73F5E1E082FF700AC1FD6 /* LocalizedStrings */ = {
@@ -4414,7 +4314,6 @@
 			children = (
 				CDB4D4DA222D24EE00104869 /* CarPlay */,
 				F6E407CC1FC45ED4001F7821 /* Discovery */,
-				3432E17F1E49BEFA008477E9 /* Ads */,
 				34BBD6491F826BD50070CA50 /* Authorization */,
 				F69018B51E9E5FEB00B3C10B /* Autoupdate */,
 				34E7760D1F14B165003040B3 /* AvailableArea */,
@@ -4975,18 +4874,15 @@
 				ORGANIZATIONNAME = MapsWithMe;
 				TargetAttributes = {
 					6741A93D1BF340DE002C974C = {
-						DevelopmentTeam = N9X2A789QT;
-						LastSwiftMigration = 1110;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = M4LKQN3HR8;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
-							com.apple.InAppPurchase = {
-								enabled = 1;
-							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.SafariKeychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -5124,7 +5020,6 @@
 				34D3B0331E389D05004100F9 /* MWMEditorCategoryCell.xib in Resources */,
 				F6E2FDCB1E097BA00083EBEC /* MWMEditorNotesFooter.xib in Resources */,
 				3DB1C57122D5DDA60097EC4C /* PromoAfterBookingViewController.xib in Resources */,
-				474AC76D2139E4F2002F9BF9 /* RemoveAdsViewController.xib in Resources */,
 				34D3B0391E389D05004100F9 /* MWMEditorSelectTableViewCell.xib in Resources */,
 				34AB663B1FC5AA330078E451 /* RouteManagerViewController.xib in Resources */,
 				34D3B03F1E389D05004100F9 /* MWMEditorSwitchTableViewCell.xib in Resources */,
@@ -5205,7 +5100,6 @@
 				470A89FF2134517600D72FBF /* BookmarksTutorialBlur.xib in Resources */,
 				4501B1952077C35A001B9173 /* resources-xxxhdpi_dark in Resources */,
 				F6D67CDE2062BBA60032FD38 /* MWMBCCreateCategoryAlert.xib in Resources */,
-				4738A8E9239FC526007C0F43 /* AdBannerView.xib in Resources */,
 				344532511F714FD70059FBCC /* UGCAddReviewController.xib in Resources */,
 				3490D2E31CE9DD2500D0B838 /* MWMSideButtonsView.xib in Resources */,
 				346DB82B1E5C4F6700E3123E /* GalleryCell.xib in Resources */,
@@ -5410,14 +5304,12 @@
 				BB8123D62130427E00ADE512 /* MetalContextFactory.mm in Sources */,
 				99A906E823F6F7030005872B /* PlacePageReviewsViewController.swift in Sources */,
 				3467CEB2202C6EEE00D3C670 /* BMCNotificationsHeader.swift in Sources */,
-				34F4072F1E9E1AFF00E57AC0 /* BannersCache.swift in Sources */,
 				34D3B0211E389D05004100F9 /* MWMEditorAddAdditionalNameTableViewCell.m in Sources */,
 				99D363192358685300941BF4 /* SubscriptionGroupItem.swift in Sources */,
 				340475501E081A4600C92850 /* fabric_logging_ios.mm in Sources */,
 				47D48BF52432A7CA00FEFB1F /* ChartViewRenderer.swift in Sources */,
 				CDCA273A2237FCFE00167D87 /* SearchTemplateBuilder.swift in Sources */,
 				993DF10B23F6BDB100AC231A /* CheckmarkRenderer.swift in Sources */,
-				34F4073E1E9E1AFF00E57AC0 /* MPNativeAd+MWM.m in Sources */,
 				F6E2FED01E097BA00083EBEC /* MWMSearchFilterViewController.mm in Sources */,
 				CDB92CEE229E9CF900EC757C /* MWMDiscoveryMapObjects.mm in Sources */,
 				34B6FD5F2015E6BF00C18E97 /* DiscoveryBookingCell.swift in Sources */,
@@ -5453,7 +5345,6 @@
 				99CB34BF2369EAAC001D28AD /* TermsOfUseViewController.swift in Sources */,
 				6741A9B91BF340DE002C974C /* MWMRateAlert.mm in Sources */,
 				3404F48B202894EA0090E401 /* BMCViewController.swift in Sources */,
-				4738A8E7239FC513007C0F43 /* AdBannerView.swift in Sources */,
 				349D1ABC1E2D05EF004A2006 /* SearchBar.swift in Sources */,
 				993F5511237C622700545511 /* DeepLinkCatalogueStrategy.swift in Sources */,
 				F6E2FF3F1E097BA00083EBEC /* MWMSearchTableViewController.mm in Sources */,
@@ -5506,7 +5397,6 @@
 				CDB4D5012231412900104869 /* ListTemplateBuilder.swift in Sources */,
 				99A906F323FA95AB0005872B /* PlacePageStyleSheet.swift in Sources */,
 				6741A9CF1BF340DE002C974C /* MWMLocationAlert.m in Sources */,
-				474AC76C2139E4F2002F9BF9 /* RemoveAdsViewController.swift in Sources */,
 				34ABA62D1C2D57D500FE1BEC /* MWMInputPasswordValidator.m in Sources */,
 				BBED27022292F6C000788143 /* BookmarksSection.mm in Sources */,
 				F6E2FDA11E097BA00083EBEC /* MWMEditorAdditionalNamesTableViewController.mm in Sources */,
@@ -5551,7 +5441,6 @@
 				F61757ED1FC73027000AD0D0 /* DiscoveryOnlineTemplateCell.swift in Sources */,
 				99425AF4236855BB00D005C0 /* PromoDiscoveryRouter.swift in Sources */,
 				F6E2FD5F1E097BA00083EBEC /* MWMMapDownloaderLargeCountryTableViewCell.m in Sources */,
-				34F4073B1E9E1AFF00E57AC0 /* MopubBanner.swift in Sources */,
 				99A906E523F6F7030005872B /* ActionBarViewController.swift in Sources */,
 				47B9065421C7FA400079C85E /* UIImageView+WebImage.m in Sources */,
 				F6E2FF481E097BA00083EBEC /* SettingsTableViewSelectableCell.swift in Sources */,
@@ -5641,7 +5530,6 @@
 				3404F4992028A20D0090E401 /* BMCCategoryCell.swift in Sources */,
 				47F6E51721FB3C51004580CA /* Notifications.swift in Sources */,
 				F62607FD207B790300176C5A /* SpinnerAlert.swift in Sources */,
-				34F407411E9E1AFF00E57AC0 /* RBBanner.swift in Sources */,
 				3444DFD21F17620C00E73099 /* MWMMapWidgetsHelper.mm in Sources */,
 				348A8DFB1F66775A00D83026 /* RatingViewSettings.swift in Sources */,
 				3472B5E1200F86C800DC6CD5 /* MWMEditorHelper.mm in Sources */,
@@ -5655,7 +5543,6 @@
 				34AB66771FC5AA330078E451 /* TransportRoutePreviewStatus.swift in Sources */,
 				34BBD6641F8270AC0070CA50 /* AuthorizationTransitioning.swift in Sources */,
 				34D3AFEA1E378AF1004100F9 /* UINib+Init.swift in Sources */,
-				34F407321E9E1AFF00E57AC0 /* BannerType.swift in Sources */,
 				F63AF5131EA6250F00A1DB98 /* FilterCollectionHolderCell.swift in Sources */,
 				34AB663E1FC5AA330078E451 /* RouteManagerTransitioning.swift in Sources */,
 				993F550B237C622700545511 /* DeepLinkIncorrectStrategy.swift in Sources */,
@@ -5674,7 +5561,6 @@
 				993DF10223F6BDB100AC231A /* Colors.swift in Sources */,
 				BB87BF8D22FAF435008A8A72 /* InfoSection.mm in Sources */,
 				34AB66201FC5AA330078E451 /* RouteStartButton.swift in Sources */,
-				34F4072C1E9E1AFF00E57AC0 /* Banner.swift in Sources */,
 				99DEF9D723E420F6006BFD21 /* ElevationProfileDescriptionCell.swift in Sources */,
 				993DF11623F6BDB100AC231A /* UIWindowRenderer.swift in Sources */,
 				F660DEE51EAF4F59004DC056 /* MWMLocationManager+SpeedAndAltitude.swift in Sources */,
@@ -5745,7 +5631,6 @@
 				34AB668C1FC5AA330078E451 /* NavigationStreetNameView.swift in Sources */,
 				993DF12923F6BDB100AC231A /* ThemeManager.swift in Sources */,
 				337F98A621D37B7400C8AC27 /* SearchTabViewController.swift in Sources */,
-				3488B0131E9D0AEC0068AFD8 /* AdBannerCell.swift in Sources */,
 				3404755F1E081A4600C92850 /* MWMLocationPredictor.mm in Sources */,
 				993DF11523F6BDB100AC231A /* UISearchBarRenderer.swift in Sources */,
 				F6E2FE041E097BA00083EBEC /* MWMOpeningHoursDaysSelectorTableViewCell.mm in Sources */,
@@ -5768,7 +5653,6 @@
 				47EF73FE247056A600D32AB8 /* GuidesGalleryCell.swift in Sources */,
 				47B06DF921B95F5E0094CCAD /* IGeoTracker.swift in Sources */,
 				CDCA27812243F59800167D87 /* CarPlayRouter.swift in Sources */,
-				34F407381E9E1AFF00E57AC0 /* FacebookBanner.swift in Sources */,
 				99CB34BD2369EAAC001D28AD /* TermsOfUsePresenter.swift in Sources */,
 				34F5E0D41E3F254800B1C415 /* UIView+Hierarchy.swift in Sources */,
 				99CB34C02369EAAC001D28AD /* TermsOfUseBuilder.swift in Sources */,
@@ -5847,7 +5731,6 @@
 				F6E2FDA41E097BA00083EBEC /* MWMCuisineEditorViewController.mm in Sources */,
 				3454D7CB1E07F045004AF2AD /* UIColor+MapsMeColor.m in Sources */,
 				34B127EA1FBDD410008713D9 /* MWMRouterTransitStepInfo.mm in Sources */,
-				34926BE71EA4C2A700DCF14C /* SearchBanners.swift in Sources */,
 				34D3B02A1E389D05004100F9 /* MWMEditorAdditionalNameTableViewCell.m in Sources */,
 				33C558E3217F6CF100299E70 /* UploadActionCell.swift in Sources */,
 				993DF10523F6BDB100AC231A /* UINavigationItem+styleName.swift in Sources */,
@@ -5879,7 +5762,6 @@
 				344532561F7155540059FBCC /* UGCReviewModel.swift in Sources */,
 				6741AA1D1BF340DE002C974C /* MWMDownloadTransitMapAlert.mm in Sources */,
 				346B42AC1DD5E3D20094EBEE /* MWMLocationNotFoundAlert.mm in Sources */,
-				340475091E08199E00C92850 /* MWMMyTarget.mm in Sources */,
 				340416501E7C086000E2B6D6 /* PhotoViewController.swift in Sources */,
 				470B3632244E2DE200C0EA9E /* GuidesGalleryCityCell.swift in Sources */,
 				993DF0C923F6BD0600AC231A /* ElevationDetailsBuilder.swift in Sources */,
@@ -6084,10 +5966,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B07BBB5C2EFC6F60EF51BC8 /* Pods-MAPS.ME.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "maps.me dbg.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development: Aleksey Belousov (8P35JSY4C8)";
-				CODE_SIGN_STYLE = Manual;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M4LKQN3HR8;
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = MetalContextFactory.mm;
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=macosx*]" = MetalContextFactory.mm;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6098,8 +5980,8 @@
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapswithme.full;
-				PROVISIONING_PROFILE_SPECIFIER = "Maps.me Carplay";
+				PRODUCT_BUNDLE_IDENTIFIER = mapsme.vng;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -6107,10 +5989,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8022FD18AD3EEA9E8C75A7A7 /* Pods-MAPS.ME.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "maps.me rel.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development: Aleksey Belousov (8P35JSY4C8)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M4LKQN3HR8;
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = MetalContextFactory.mm;
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=macosx*]" = MetalContextFactory.mm;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6121,8 +6003,8 @@
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapswithme.full;
-				PROVISIONING_PROFILE_SPECIFIER = "Maps.me Carplay";
+				PRODUCT_BUNDLE_IDENTIFIER = mapsme.vng;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -6130,8 +6012,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 166595280BE641CF8ADE2209 /* Pods-MAPS.ME.production full.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "maps.me full.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M4LKQN3HR8;
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = MetalContextFactory.mm;
 				"EXCLUDED_SOURCE_FILE_NAMES[sdk=macosx*]" = MetalContextFactory.mm;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6142,7 +6026,7 @@
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapswithme.full;
+				PRODUCT_BUNDLE_IDENTIFIER = mapsme.vng;
 			};
 			name = "Production Full";
 		};
@@ -6212,7 +6096,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party",
-					"$(PROJECT_DIR)/3party/MyTarget",
 				);
 				GCC_PREFIX_HEADER = Maps_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
@@ -6225,10 +6108,7 @@
 					"$(OMIM_ROOT)/3party/jansson/src",
 				);
 				INFOPLIST_FILE = MAPSME.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/3party/Flurry",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -6268,7 +6148,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3party",
-					"$(PROJECT_DIR)/3party/MyTarget",
 				);
 				GCC_PREFIX_HEADER = Maps_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -6284,10 +6163,7 @@
 					"$(OMIM_ROOT)/3party/jansson/src",
 				);
 				INFOPLIST_FILE = MAPSME.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/3party/Flurry",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-Wall",

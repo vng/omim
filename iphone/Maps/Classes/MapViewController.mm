@@ -74,7 +74,6 @@ NSString *const kPP2BookmarkEditingSegue = @"PP2BookmarkEditing";
                                  MWMStorageObserver,
                                  MWMWelcomePageControllerProtocol,
                                  MWMKeyboardObserver,
-                                 RemoveAdsViewControllerDelegate,
                                  MWMBookmarksObserver>
 
 @property(nonatomic, readwrite) MWMMapViewControlsManager *controlsManager;
@@ -566,9 +565,6 @@ NSString *const kPP2BookmarkEditingSegue = @"PP2BookmarkEditing";
 }
 
 - (void)showRemoveAds {
-  auto removeAds = [[RemoveAdsViewController alloc] init];
-  removeAds.delegate = self;
-  [self.navigationController presentViewController:removeAds animated:YES completion:nil];
 }
 
 - (void)processMyPositionStateModeEvent:(MWMMyPositionMode)mode {
@@ -619,16 +615,6 @@ NSString *const kPP2BookmarkEditingSegue = @"PP2BookmarkEditing";
 }
 
 #pragma mark - MWMRemoveAdsViewControllerDelegate
-
-- (void)didCompleteSubscribtion:(RemoveAdsViewController *)viewController {
-  [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-  GetFramework().DeactivateMapSelection(true);
-  [self.controlsManager hideSearch];
-}
-
-- (void)didCancelSubscribtion:(RemoveAdsViewController *)viewController {
-  [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-}
 
 #pragma mark - MWMFrameworkDrapeObserver
 

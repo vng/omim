@@ -36,12 +36,7 @@ class PlacePagePreviewViewController: UIViewController {
   @IBOutlet var addressDirectionView: DirectionView!
 
   var directionView: DirectionView?
-  lazy var adView: AdBannerView = {
-    let view = Bundle.main.load(viewClass: AdBannerView.self)?.first as! AdBannerView
-    view.isHidden = true
-    return view
-  }()
-
+  
   var placePagePreviewData: PlacePagePreviewData!
   weak var delegate: PlacePagePreviewViewControllerDelegate?
 
@@ -100,15 +95,6 @@ class PlacePagePreviewViewController: UIViewController {
       updateHeading(heading)
     } else {
       directionView?.imageView.isHidden = true
-    }
-
-    stackView.addArrangedSubview(adView)
-  }
-
-  func updateBanner(_ banner: MWMBanner) {
-    adView.isHidden = false
-    adView.config(ad: banner, containerType: .placePage, canRemoveAds: true) { [weak self] in
-      self?.delegate?.previewDidPressRemoveAds()
     }
   }
 

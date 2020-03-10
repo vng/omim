@@ -31,12 +31,6 @@ class PlacePageCommonLayout: NSObject, IPlacePageLayout {
     return placePageNavigationViewController
   }
 
-  var adState: AdBannerState = .unset {
-    didSet {
-      previewViewController.adView.state = self.adState
-    }
-  }
-
   lazy var previewViewController: PlacePagePreviewViewController = {
     let vc = storyboard.instantiateViewController(ofType: PlacePagePreviewViewController.self)
     vc.placePagePreviewData = placePageData.previewData
@@ -208,11 +202,6 @@ class PlacePageCommonLayout: NSObject, IPlacePageLayout {
       placePageData.loadUgc(completion: onLoadUgc)
     }
 
-    if placePageData.previewData.hasBanner,
-      let banners = placePageData.previewData.banners {
-      BannersCache.cache.get(coreBanners: banners, cacheOnly: false, loadNew: true, completion: onGetBanner)
-    }
-
     if placePageData.buttonsData != nil {
       viewControllers.append(buttonsViewController)
     }
@@ -336,11 +325,6 @@ extension PlacePageCommonLayout {
         wikiDescriptionViewController.view.isHidden = false
       }
     }
-  }
-
-  func onGetBanner(banner: MWMBanner, loadNew: Bool) -> Void {
-    previewViewController.updateBanner(banner)
-    presenter?.updatePreviewOffset()
   }
 
   func updateBookmarkSection() {

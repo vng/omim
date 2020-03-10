@@ -1,8 +1,6 @@
 #import "MWMMapDownloadDialog.h"
 #import <SafariServices/SafariServices.h>
 #import "CLLocation+Mercator.h"
-#import "MWMBannerHelpers.h"
-#import "MWMBookmarksBannerViewController.h"
 #import "MWMCircularProgress.h"
 #import "MWMStorage+UI.h"
 #import "MapViewController.h"
@@ -10,9 +8,6 @@
 #import "SwiftBridge.h"
 
 #include <CoreApi/Framework.h>
-
-#include "partners_api/ads/ads_engine.hpp"
-#include "partners_api/ads/banner.hpp"
 
 #include "storage/country_info_getter.hpp"
 
@@ -40,6 +35,7 @@ BOOL canAutoDownload(storage::CountryId const &countryId) {
   return YES;
 }
 
+/*
 ads::Banner getPromoBanner(std::string const &mwmId) {
   std::vector<ads::Banner> banners;
   auto const pos = GetFramework().GetCurrentPosition();
@@ -53,6 +49,7 @@ ads::Banner getPromoBanner(std::string const &mwmId) {
 
   return banners[0];
 }
+*/
 }  // namespace
 
 using namespace storage;
@@ -73,7 +70,6 @@ using namespace storage;
 @property(nonatomic) MWMCircularProgress *progress;
 @property(nonatomic) NSMutableArray<NSDate *> *skipDownloadTimes;
 @property(nonatomic) BOOL isAutoDownloadCancelled;
-@property(strong, nonatomic) MWMDownloadBannerViewController *bannerViewController;
 
 @end
 
@@ -103,7 +99,6 @@ using namespace storage;
 }
 
 - (void)configDialog {
-  [self removePreviousBunnerIfNeeded];
   auto &f = GetFramework();
   auto const &s = f.GetStorage();
   auto const &p = f.GetDownloadingPolicy();
@@ -158,7 +153,6 @@ using namespace storage;
         if (nodeAttrs.m_downloadingProgress.second != 0)
           [self showDownloading:(CGFloat)nodeAttrs.m_downloadingProgress.first /
                                 nodeAttrs.m_downloadingProgress.second];
-        [self showBannerIfNeeded];
         break;
       case NodeStatus::Applying:
       case NodeStatus::InQueue:
@@ -243,7 +237,6 @@ using namespace storage;
 }
 
 - (void)showDownloadRequest {
-  [self hideBanner];
   self.downloadButton.hidden = NO;
   self.progressWrapper.hidden = YES;
   [self addToSuperview];
@@ -260,7 +253,6 @@ using namespace storage;
 }
 
 - (void)showInQueue {
-  [self showBannerIfNeeded];
   self.nodeSize.textColor = [UIColor blackSecondaryText];
   self.nodeSize.text = L(@"downloader_queued");
   self.downloadButton.hidden = YES;
@@ -277,6 +269,7 @@ using namespace storage;
     [self configDialog];
 }
 
+/*
 - (NSString *)getStatProvider:(MWMBannerType)bannerType {
   switch (bannerType) {
   case MWMBannerTypeTinkoffAllAirlines: return kStatTinkoffAirlines;
@@ -397,6 +390,7 @@ using namespace storage;
   self.bannerView.hidden = YES;
   [self layoutIfNeeded];
 }
+*/
 
 #pragma mark - MWMStorageObserver
 

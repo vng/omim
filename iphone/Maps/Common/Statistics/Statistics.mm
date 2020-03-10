@@ -4,9 +4,7 @@
 
 #import "3party/Alohalytics/src/alohalytics.h"
 #import "3party/Alohalytics/src/alohalytics_objc.h"
-#import "Flurry.h"
-#import <MyTrackerSDK/MRMyTracker.h>
-#import <MyTrackerSDK/MRMyTrackerParams.h>
+
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <AdSupport/ASIdentifierManager.h>
 #import <CoreApi/AppInfo.h>
@@ -18,11 +16,6 @@
 
 namespace
 {
-void checkFlurryLogStatus(FlurryEventRecordStatus status) {
-  NSCAssert(status == FlurryEventRecorded || status == FlurryEventLoggingDelayed,
-            @"Flurry log event failed.");
-}
-  
 NSInteger convertToAlohalyticsChannel(StatisticsChannel cnannel) {
   switch (cnannel) {
     case StatisticsChannelDefault: return (NSInteger)alohalytics::ChannelMask(0);
@@ -43,21 +36,6 @@ NSInteger convertToAlohalyticsChannel(StatisticsChannel cnannel) {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // _enabled should be already correctly set up in init method.
   if ([MWMSettings statisticsEnabled]) {
-    if ([ASIdentifierManager sharedManager].advertisingTrackingEnabled) {
-      auto sessionBuilder = [[[FlurrySessionBuilder alloc] init]
-                             withAppVersion:[AppInfo sharedInfo].bundleVersion];
-      [sessionBuilder withDataSaleOptOut:true];
-      [Flurry startSession:@(FLURRY_KEY) withSessionBuilder:sessionBuilder];
-      [Flurry logAllPageViewsForTarget:application.windows.firstObject.rootViewController];
-
-      [MRMyTracker createTracker:@(MY_TRACKER_KEY)];
-  #ifdef DEBUG
-      [MRMyTracker setDebugMode:YES];
-  #endif
-      [MRMyTracker trackerParams].trackLaunch = YES;
-      [MRMyTracker setupTracker];
-    }
-
     [Alohalytics setup:@[@(ALOHALYTICS_URL), [NSString stringWithFormat:@"%@/%@", @(ALOHALYTICS_URL), @"realtime"]]
      withLaunchOptions:launchOptions];
   }
@@ -70,10 +48,7 @@ NSInteger convertToAlohalyticsChannel(StatisticsChannel cnannel) {
   if (![MWMSettings statisticsEnabled])
     return;
   NSMutableDictionary * params = [self addDefaultAttributesToParameters:parameters];
-  [Alohalytics logEvent:eventName withDictionary:params withChannel:convertToAlohalyticsChannel(channel)];
-  dispatch_async(dispatch_get_main_queue(), ^{
-    checkFlurryLogStatus([Flurry logEvent:eventName withParameters:params]);
-  });
+  [Alohalytics logEvent:eventName withDictionary:params];
 }
 
 - (void)logEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters atLocation:(CLLocation *)location
@@ -85,9 +60,6 @@ NSInteger convertToAlohalyticsChannel(StatisticsChannel cnannel) {
             withChannel:convertToAlohalyticsChannel(channel)];
   auto const & coordinate = location ? location.coordinate : kCLLocationCoordinate2DInvalid;
   params[kStatLocation] = makeLocationEventValue(coordinate.latitude, coordinate.longitude);
-  dispatch_async(dispatch_get_main_queue(), ^{
-    checkFlurryLogStatus([Flurry logEvent:eventName withParameters:params]);
-  });
 }
 
 - (NSMutableDictionary *)addDefaultAttributesToParameters:(NSDictionary *)parameters {

@@ -9,7 +9,7 @@
 
 using namespace power_management;
 
-@interface MWMSettingsViewController ()<SettingsTableViewSwitchCellDelegate, RemoveAdsViewControllerDelegate>
+@interface MWMSettingsViewController ()<SettingsTableViewSwitchCellDelegate>
 
 @property(weak, nonatomic) IBOutlet SettingsTableViewLinkCell * profileCell;
 
@@ -208,9 +208,6 @@ using namespace power_management;
 
 - (void)showRemoveAds
 {
-  auto removeAds = [[RemoveAdsViewController alloc] init];
-  removeAds.delegate = self;
-  [self.navigationController presentViewController:removeAds animated:YES completion:nil];
 }
 
 #pragma mark - SettingsTableViewSwitchCellDelegate
@@ -364,12 +361,6 @@ using namespace power_management;
   else if (cell == self.restoreSubscriptionCell)
   {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    __weak auto s = self;
-    [self signupWithAnchor:self.restoreSubscriptionCell.progress source:AuthorizationSourceSubscription onComplete:^(BOOL success) {
-      if (success) {
-        [s restoreSubscription];
-      }
-    }];
   }
   else if (cell == self.manageSubscriptionsCell)
   {
@@ -411,21 +402,6 @@ using namespace power_management;
   case 1: return L(@"allow_statistics_hint");
   default: return nil;
   }
-}
-
-#pragma mark - RemoveAdsViewControllerDelegate
-
-- (void)didCompleteSubscribtion:(RemoveAdsViewController *)viewController
-{
-  [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-  self.showOffersCell.isEnabled = NO;
-}
-
-- (void)didCancelSubscribtion:(RemoveAdsViewController *)viewController
-{
-  [self.navigationController dismissViewControllerAnimated:YES completion:^{
-    self.showOffersCell.isOn = YES;
-  }];
 }
 
 #pragma mark - RestoreSubscription
