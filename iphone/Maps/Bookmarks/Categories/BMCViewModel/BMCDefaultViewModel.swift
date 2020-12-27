@@ -66,8 +66,8 @@ final class BMCDefaultViewModel: NSObject {
   func reloadData() {
     sections = []
 
-    sections.append(.permissions)
-    setPermissions()
+//    sections.append(.permissions)
+//    setPermissions()
 
     if manager.areBookmarksLoaded() {
       sections.append(.categories)
