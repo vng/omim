@@ -121,6 +121,17 @@ void FeatureBuilder::SetCenter(m2::PointD const & p)
   m_limitRect.Add(p);
 }
 
+bool FeatureBuilder::AddTypeSafe(uint32_t type)
+{
+  if (m_params.m_types.size() < feature::kMaxTypesCount)
+  {
+    AddType(type);
+    return true;
+  }
+  else
+    return false;
+}
+
 void FeatureBuilder::SetRank(uint8_t rank)
 {
   m_params.rank = rank;

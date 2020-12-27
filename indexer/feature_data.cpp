@@ -359,7 +359,9 @@ void FeatureParams::SetGeomTypePointEx()
 
 feature::GeomType FeatureParams::GetGeomType() const
 {
-  CHECK(IsValid(), ());
+  /// @todo GetGeomType() is called from DebugPrint in case of invalid feature.
+  //CHECK(IsValid(), ());
+
   switch (*m_geomType)
   {
   case HeaderGeomType::Line: return GeomType::Line;

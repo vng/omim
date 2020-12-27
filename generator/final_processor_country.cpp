@@ -262,12 +262,17 @@ void CountryFinalProcessor::ProcessBuildingParts()
     });
 
     FeatureBuilderWriter<serialization_policy::MaxAccuracy> writer(path, true /* mangleName */);
-    ForEachFeatureRawFormat<serialization_policy::MaxAccuracy>(path, [&](auto && fb, auto /* pos */) {
+    ForEachFeatureRawFormat<serialization_policy::MaxAccuracy>(path, [&](auto && fb, auto /* pos */)
+    {
+      /// @todo Is it correct to check fb.IsValid() here,
+      /// because next call to writer.Write(fb) will fail otherwise on CHECK.
+
       if (fb.IsArea() && fb.IsValid() &&
           fb.HasType(buildingClassifType) &&
           DoesBuildingConsistOfParts(fb, buildingPartsKDTree))
       {
-        fb.AddType(buildingWithPartsClassifType);
+        if (!fb.AddTypeSafe(buildingWithPartsClassifType))
+          LOG(LWARNING, ("Exceeded max number of feature types", fb));
       }
 
       writer.Write(fb);

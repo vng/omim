@@ -120,6 +120,7 @@ public:
   // To work with types.
   void SetType(uint32_t type) { m_params.SetType(type); }
   void AddType(uint32_t type) { m_params.AddType(type); }
+  bool AddTypeSafe(uint32_t type);
   bool PopExactType(uint32_t type) { return m_params.PopExactType(type); }
 
   template <class Fn>
